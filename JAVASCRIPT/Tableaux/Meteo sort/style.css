@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    color: rgb(40, 38, 211);
+    font-size: 60px;
+    width: 100%;
+    height: 10%;
+    background: #ffffff;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    padding-bottom: 2%;
+}
+
+#selection_div {
+    background-color: rgb(40, 38, 211);
+    color: white;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 1%;
+}
+
+label {
+    color: yellow;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+#selection_menu {
+    margin-left: -20%;
+    color: rgb(40, 38, 211);
+    width: 25%;
+    height: 60%;
+    font-size: 15px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#div_cities {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    background: url(./images/background_modified.png) center center;
+}
+
+.cities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 30%;
+    border-radius: 10px;
+    font-family: cursive;
+    font-size: x-large;
+    color: white;
+    text-align: center;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.city_child {
+    width: 95%;
+    height: 95%;
+    background-color: white;
+    font-size: 15px;
+    color: rgb(40, 38, 211);
+}
+
+.city_child_name {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 10px 13px -7px #0d1a50, -1px 11px 21px 10px rgba(0, 0, 0, 0.37);
+    box-shadow: 0px 10px 13px -7px #0d1a50, -1px 11px 21px 10px rgba(0, 0, 0, 0.37);
+}
+
+#Brussels,
+#London,
+#Lisboa,
+#Tokyo,
+#Madrid,
+#Beijing,
+#Zagreb {
+    transform: rotate(10deg);
+    border: 2px solid rgb(209, 17, 17);
+}
+
+#Paris,
+#Rome,
+#Washington,
+#Buenosaires,
+#Ottawa {
+    transform: rotate(-5deg);
+    border: 2px solid rgb(134, 67, 241);
+}

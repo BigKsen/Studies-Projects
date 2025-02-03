@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exo Tailwind vs Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer>
+        //Dans le TAILWIND.CONFIG : on met LE NOM des classes deja dispo par default dans Tailwind: colors, fonts, font-family, etc, le nom de la sous-classe peut etre choisi par moi
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                    fontFamily: {
+
+                        generalFont: "cursive",
+                    },
+
+
+                    colors: {
+                        beige: "#e5e5e5",
+                        emeraude: "#022c22",
+                    },
+
+
+                }
+            }
+        }
+
+    </script>
+
+    <!-- dans le STYLE je créé les classe avec les noms que je choisi et je mets ce que je veux dedans-->
+
+    <!--type=text/tailwindcss" TOUJOURS -->
+
+    <!--@apply TOUJOURS -->
+
+    <style type="text/tailwindcss">
+        .colPageLayout{
+            @apply w-screen h-screen flex flex-col justify-evenly items-center bg-emerald-950;
+        }
+
+        .divPageLayout {
+           @apply w-screen h-screen flex flex-row flex-wrap justify-evenly items-center 
+           shadow-2xl shadow-inner shadow-emerald-950/100 rounded-md 
+            }
+
+
+        .imgLayout {
+            @apply w-1/5 h-auto ring-4 ring-emerald-800 rounded-lg shadow-xl shadow-emerald-900/100 hover:w-1/4 ease-in-out duration-300
+            }
+    
+
+        .mainTitlelLayout {
+            @apply text-6xl text-neutral-200 font-bold
+        }
+
+        .bg-Paws {
+            @apply bg-[url('/images/bg-paws2.jpg')] w-3/4 h-3/5
+        
+        }
+
+    </style>
+
+</head>
+
+<body class="colPageLayout">
+
+    <h1 class="mainTitlelLayout font-generalFont"> Funny Pugs</h1>
+
+    <div class="bg-Paws divPageLayout">
+        <img class="imgLayout" src="./images/pug_batman.jpg" alt="pug_batman">
+
+        <img class="imgLayout" src="./images/pug_devil.jpg" alt="pug_devil">
+
+        <img class="imgLayout" src="./images/pug_pizza.jpg" alt="pug_pizza">
+
+        <img class="imgLayout" src="./images/pug_yoda.jpg" alt="pug_yoda">
+    </div>
+
+    <p class="text-beige font-generalFont text-xl">Hello human! Let's play, I can't wait no more</p>
+</body>
+
+</html>

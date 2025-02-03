@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Pierre Papier Ciseaux</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Pierre | Feuille | Ciseaux</h1>  
+</header>
+
+<main>
+    <div id="players">
+        <div id="player1">Vous</div>
+        <div id="nada"></div>
+        <div id="player2">Ordinateur</div>
+    </div>
+
+    <div id="heart">
+
+        <div id="me">
+            <div id="cards">
+                <button id="rock">
+                    <img src="./images/icons8-langue-des-signes-e-100.png" alt="icone pierre">
+                </button>
+                <button id="paper">
+                    <img src="./images/icons8-toute-la-main-100.png" alt="icone papier">
+                </button>
+                <button id="scissors">
+                    <img src="./images/icons8-langue-des-signes-k-100.png" alt="icone ciseaux">
+                </button>
+            </div>
+        </div>
+    
+        <div id="middle">
+            <h4 id="middleH4">Cliquez sur une image pour jouer</h4>
+        </div>
+
+        <div id="computer">
+            <div id="cards2">
+                <div id="rock2">
+                        <img src="./images/icons8-langue-des-signes-e-100.png" alt="icone pierre">
+                </div>
+                <div id="question">
+                    <img src="./images/icons8-point-d'interrogation-100.png" alt="icone point interrogation ">
+                </div>
+                <div id="paper2">
+                    <img src="./images/icons8-toute-la-main-100.png" alt="icone papier">
+                </div>
+                <div id="scissors2">
+                    <img src="./images/icons8-langue-des-signes-k-100.png" alt="icone ciseaux">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="scores">
+        <div id="myScore">0</div>
+        <div id="nada"></div>
+        <div id="itsScore">0</div>
+    </div>
+
+</main>
+
+<footer>
+    <div id="footerCase1">
+        <h2>Statistiques: </h2>
+        <h4>Vous: <span id="myGainSets">0</span></h4>
+        <h4>Ordinateur: <span id="itsGainSets">0</span></h4>
+    </div>
+    <div id="footerCase2">
+        <img src="./images/icons8-rejouer-100.png" alt="icone rejouer">
+        <h2>Rejouer</h2>
+    </div>
+    <div id="footerCase3">
+        <img src="./images/icons8-gomme-100.png" alt="icone gomme">
+        <h2>Effacer</h2>
+    </div>
+
+</footer>
+
+</body>
+</html>

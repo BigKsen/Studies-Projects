@@ -1,0 +1,67 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 15%;
+    box-shadow: 3px 14px 15px -1px #7a7a7a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#h_0{
+    zoom:1.5
+}
+
+#goal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height:30%;
+}
+
+#user_input{
+    width: 20%;
+    height: 30%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#word{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+}
+
+#win{
+    display: none;
+}
+
+#lose{
+    display: none;
+}

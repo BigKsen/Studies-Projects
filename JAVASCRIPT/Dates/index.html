@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- 1) script de CDN dayJS -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
+    <!-- 2) script CDN de LOCALE dayJS en français-->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/locale/fr.js"></script>
+    <!-- 3) script JS bavec DEFER  !!!LE CDN EST TOUJOURS AVANT LE SCRIPT !!!-->
+    <script src="main.js" defer></script>
+
+    <title>Exo Tables</title>
+</head>
+
+<body>
+    <table id="table1">
+        <caption>
+            Planning WEB13 2024
+        </caption>
+        <thead>
+            <tr id="weekDays">
+                <th></th>
+                <th class="weekday" id="lundi"></th>
+                <th class="weekday" id="mardi"></th>
+                <th class="weekday" id="mercredi"></th>
+                <th class="weekday" id="jeudi"></th>
+                <th class="weekday" id="vendredi"></th>
+                <th class="weekday" id="samedi"></th>
+                <th class="weekday" id="dimanche"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th class="weeks" id="week1"></th>
+                <td class="HTML">HTML/CSS</td>
+                <td class="React">React</td>
+                <td class="Illustrator">Illustrator</td>
+                <td class="HTML">HTML/CSS</td>
+                <td class="JS">JS</td>
+                <td colspan="2" rowspan="4">Weekend</td>
+            </tr>
+
+            <tr>
+                <th class="weeks" id="week2"></th>
+                <td class="JS" colspan="5">JS</td>
+            </tr>
+
+            <tr>
+                <th class="weeks" id="week3"></th>
+                <td class="Photoshop" colspan="2">Photoshop</td>
+                <td class="Illustrator">Illustrator</td>
+                <td class="HTML" colspan="2">HTML/CSS</td>
+            </tr>
+
+            <tr>
+                <th class="weeks" id="week4"></th>
+                <td class="React" colspan="2">React</td>
+                <td class="JS" colspan="2">JS</td>
+                <td class="Illustrator">Illustrator</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table id="table2">
+        <caption>Liste étudiantes 2024</caption>
+        <thead>
+            <tr>
+                <th>Avatar</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Caractéristique</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="light">
+                <td><img src="./images/Fathima.png" alt=""></td>
+                <td>Bouazzaoui</td>
+                <td>Fathima</td>
+                <td>Lil Sis'🤜🤛</td>
+            </tr>
+
+            <tr class="fat">
+                <td><img src="./images/Amandine.png" alt=""></td>
+                <td>Ameye</td>
+                <td>Amandine</td>
+                <td>Lovely Pappoose 🐣</td>
+            </tr>
+
+            <tr class="light">
+                <td><img src="./images/Tamara.png" alt=""></td>
+                <td>Vandebroeck</td>
+                <td>Tamara</td>
+                <td> Warrior🐻 </td>
+            </tr>
+
+            <tr class="fat">
+                <td><img src="./images/Sounia.png" alt=""></td>
+                <td>Mhalla Dit Aounallah</td>
+                <td>Sounia</td>
+                <td> Check👈 </td>
+            </tr>
+
+            <tr class="light">
+                <td><img src="./images/Zuzana.png" alt=""></td>
+                <td>Droppova</td>
+                <td>Zuzana</td>
+                <td> </td>
+            </tr>
+
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+
+</body>
+
+</html>

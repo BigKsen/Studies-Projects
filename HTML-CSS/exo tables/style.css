@@ -1,0 +1,104 @@
+@font-face {
+    font-family: Chocolate Covered Raindrops BOLD;
+    src: url(./fonts/Chocolate\ Covered\ Raindrops\ BOLD.ttf);
+}
+
+@font-face {
+    font-family: Chocolate Covered Raindrops;
+    src: url(./fonts/Chocolate\ Covered\ Raindrops.ttf);
+}
+
+/*Pour utiliser une police téléchargée d'internet:
+- telecharger la police
+- deZIPer le document
+- copier-coller le fichier "Personal Use" qui contient la police dans mon projet (créer un dossier FONTS et mettre le fichier dedans)
+- ajouter FONT-FACE dans le CSS:
+    @font-face {
+    font-family: LE NOM DE LA POLICE;
+    src: url(URL vers lA POLICE qui se trouve DANS LE DOSSIER DU PROJET);
+    } */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary_color: #f8ebf5;
+    --secondary_color: #ae548d;
+    --accent_color: #833164;
+}
+
+#table1 tr {
+    background-color: var(--primary_color);
+}
+
+#table1,
+#table2 {
+    background-color: white;
+    padding: 1%;
+    margin-bottom: 5%;
+    font-family: Chocolate Covered Raindrops;
+    color: var(--accent_color);
+}
+
+tr,
+th,
+td {
+    width: 5%;
+    height: 5%;
+    text-align: center;
+    padding: 1%;
+}
+
+img {
+    width: 40%;
+}
+
+th {
+    background-color: var(--secondary_color);
+    color: white;
+    font-family: Chocolate Covered Raindrops BOLD;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+caption {
+    font-size: 3rem;
+    margin: 2%;
+    font-family: Chocolate Covered Raindrops BOLD;
+}
+
+#table1,
+#table2 tr td {
+    font-size: 30px;
+}
+
+.HTML {
+    background-color: #a5d284;
+}
+
+.JS {
+    background-color: #c79ed4;
+}
+
+.Photoshop {
+    background-color: #bfe8f2;
+}
+
+.Illustrator {
+    background-color: #f3ef95;
+}
+
+.React {
+    background-color: #faa7a7;
+}
+
+.light {
+    background-color: var(--primary_color);
+}
+
+.fat {
+    background-color: var(--secondary_color);
+    color: white;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Exo forms</title>
+  </head>
+
+  <body>
+    <form id="task_form" method="post" action="javascript:void(0)">
+      <!-- javascript void: signifie que nos données ne vont nul part, ils ne sont pas rcupérés-->
+
+      <fieldset>
+        <!--ou une DIV est aussi OK-->
+        <legend>Ajouter une tâche</legend>
+        <label for="task_field">Tâche</label><br />
+        <input
+          type="text"
+          name="task_field"
+          id="task_field"
+          placeholder="visites ventes"
+          max="200"
+          pattern="[a-zA-Z]+"
+          required
+        />
+      </fieldset>
+
+      <fieldset>
+        <!--mettre des NAMES partout, c'est utile quand le formulaire est submit et est récupéré dans un fichier data-->
+        <label for="task_description_field">Description</label><br />
+        <textarea
+          name="task_description_field"
+          id="task_description_field"
+          name="task_description_field"
+          rows="10"
+          cols="50"
+          placeholder="Decrivez précisement la tâche"
+          maxlength="500"
+          spellcheck
+        ></textarea>
+      </fieldset>
+
+      <fieldset id="start_fieldset">
+        <label for="start_date_field">Date de début </label><br />
+        <input
+          type="date"
+          id="start_date_field"
+          name="start_date_field"
+          min="2024-05-21"
+          required
+        /><br />
+        <!--le MIN est fixé pour que le calendrier soit bloqué pour les dates avant celle qui est mentionnée-->
+      </fieldset>
+
+      <fieldset id="end_fieldset">
+        <label for="end_date_field">Date limite de fin </label><br />
+        <input type="date" id="end_date_field" name="end_date_field" />
+      </fieldset>
+
+      <fieldset>
+        <label for="person_name">Nom de la personne</label><br />
+        <select name="person_name" id="person_name" required>
+          <option value="">Choisissez...</option>
+          <!-- mettre ce genre d'option en premier qui doit rester VIDE sinon n'oblige pas le champs à être rempli-->
+          <option value="Smith John">Smith John</option>
+          <option value="Relax Cathy">Relax Cathy</option>
+          <option value="Huang Thu">Huang Thu</option>
+          <option value="Bardot Brigitte">Bardot Brigitte</option>
+          <option value="Diks Scott">Diks Scott</option>
+        </select>
+      </fieldset>
+
+      <fieldset id="checkbox_fieldset">
+        <input type="checkbox" id="urgency" />
+        <label for="urgency">Tache urgente</label>
+      </fieldset>
+
+      <fieldset id="buttons_fieldset">
+        <input type="reset" id="reset_btn" name="reset" value="RESET" />
+        <!--le input pour reseter doit avoir un type RESET-->
+        <input
+          type="submit"
+          id="submit_btn"
+          name="submit"
+          value="SUBMIT"
+        /><!--le input pour envoyer doit avoir un type sunmit, si c'est un BOUTON, il est par default SUBMIT-->
+      </fieldset>
+    </form>
+
+    <table>
+      <tr>
+        <th colspan="4">Liste des tâches</th>
+      </tr>
+
+      <tr>
+        <th>Tâche</th>
+        <th>Nom personne</th>
+        <th>Date Début</th>
+        <th>Date Echéance</th>
+      </tr>
+
+      <tr id="tr1">
+        <td>Tache: <span class="span_task"></span></td>
+        <td>Nom personne: <span class="span_name"></span></td>
+        <td>Date Début: <span class="span_start"></span></td>
+        <td>Date Echéance: <span class="span_end"></span></td>
+      </tr>
+
+      <tr id="tr2">
+        <td>Tache: <span class="span_task"></span></td>
+        <td>Nom personne: <span class="span_name"></span></td>
+        <td>Date Début: <span class="span_start"></span></td>
+        <td>Date Echéance: <span class="span_end"></span></td>
+      </tr>
+
+      <tr id="tr3">
+        <td>Tache: <span class="span_task"></span></td>
+        <td>Nom personne: <span class="span_name"></span></td>
+        <td>Date Début: <span class="span_start"></span></td>
+        <td>Date Echéance: <span class="span_end"></span></td>
+      </tr>
+
+      <tr id="tr4">
+        <td>Tache: <span class="span_task"></span></td>
+        <td>Nom personne: <span class="span_name"></span></td>
+        <td>Date Début: <span class="span_start"></span></td>
+        <td>Date Echéance: <span class="span_end"></span></td>
+      </tr>
+
+      <tr id="tr5">
+        <td>Tache: <span class="span_task"></span></td>
+        <td>Nom personne: <span class="span_name"></span></td>
+        <td>Date Début: <span class="span_start"></span></td>
+        <td>Date Echéance: <span class="span_end"></span></td>
+      </tr>
+    </table>
+  </body>
+</html>
