@@ -1,190 +1,198 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    width: 100vw;
-    min-height: 100vh;
-    background: rgb(16, 16, 16);
-    background: linear-gradient(335deg, rgba(16, 16, 16, 1) 70%, rgba(60, 66, 74, 1) 100%);
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-    color: white;
-    overflow-y: auto; /* Permet uniquement le défilement vertical */
-    overflow-x: hidden; /* Supprime tout défilement horizontal */
+  width: 100vw;
+  min-height: 100vh;
+  background: rgb(16, 16, 16);
+  background: linear-gradient(
+    335deg,
+    rgba(16, 16, 16, 1) 70%,
+    rgba(60, 66, 74, 1) 100%
+  );
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  color: white;
+  overflow-y: auto; /* Permet uniquement le défilement vertical */
+  overflow-x: hidden; /* Supprime tout défilement horizontal */
 }
 
 header {
-    width: 100vw;
-    height: 10vh;
-    box-shadow: inset 0px -5px 10px -5px #849291;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    font-size: 2em;
-    z-index: 100;
+  width: 100vw;
+  height: 10vh;
+  box-shadow: inset 0px -5px 10px -5px #849291;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 2em;
+  z-index: 100;
 }
 
 header a {
-    text-decoration: none;
-    color: inherit;
-    width: 14%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  width: 14%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 header a:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 a.clicked {
-    color: #fac700;
-    transform: scale(1.1);
+  color: #fac700;
+  transform: scale(1.1);
 }
 
 #aside_home {
-    width: 30px;
-    height: auto;
-    min-height: 0;
-    position: fixed;
-    top: 45%;
-    right: 0;
-    background-color: #fac700;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 30px;
-    padding: 10px;
-    border-radius: 10px 0 0 10px;
-    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
-    z-index: 200;
+  width: 30px;
+  height: auto;
+  min-height: 0;
+  position: fixed;
+  top: 45%;
+  right: 0;
+  background-color: #fac700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
+  z-index: 200;
 }
 
 .arrow {
-    width: 30px;
-    height: 30px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    transition: transform 0.5s, background-image 0.5s;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: transform 0.5s, background-image 0.5s;
 }
 
 .arrow-up {
-    background-image: url("./assets/icons/arrowUpWhite.png");
+  background-image: url("./assets/icons/arrowUpWhite.png");
 }
 
 .arrow-down {
-    background-image: url("./assets/icons/arrowDownWhite.png");
+  background-image: url("./assets/icons/arrowDownWhite.png");
 }
 
 section {
-    width: 100%;
-    min-height: 100vh;
-    scroll-margin-top: 20vh; /* Hauteur de la barre de navigation */
-    position: relative;
-    z-index: 1;
-    background-color: transparent;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
+  width: 100%;
+  min-height: 100vh;
+  scroll-margin-top: 20vh; /* Hauteur de la barre de navigation */
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
 }
 
 section h2 {
-    width: 100%;
-    height: 10%;
-    background-color: #fac700;
-    font-family: "Raleway", sans-serif;
-    text-align: left;
-    font-weight: 200;
-    font-size: 3em;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding-left: 5%;
-    box-shadow: inset 1px 5px 15px #ffffff;
+  width: 100%;
+  height: 10%;
+  background-color: #fac700;
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+  font-weight: 200;
+  font-size: 3em;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-left: 5%;
+  box-shadow: inset 1px 5px 15px #ffffff;
 }
 
 /*SECTION PROFIL*/
 
 #profile img {
-    width: 20%;
-    height: 85%;
+  width: 20%;
+  height: 85%;
 }
 
 #signature {
-    font-family: "Give You Glory", cursive;
-    font-weight: 400;
-    font-style: normal;
-    color: #fac700;
-    font-size: 10em;
-    position: absolute;
-    top: 87%;
-    left: 10%;
-    transform: rotate(-10deg);
-    text-shadow: 5px 0px 15px #fac700;
+  font-family: "Give You Glory", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #fac700;
+  font-size: 10em;
+  position: absolute;
+  top: 87%;
+  left: 10%;
+  transform: rotate(-10deg);
+  text-shadow: 5px 0px 15px #fac700;
 }
 
 #cv_suggestion {
-    font-family: "Give You Glory", cursive;
-    font-weight: 400;
-    font-style: normal;
-    background: linear-gradient(180deg, #1a6dff 0%, #c822ff 60%); /*Mise du texte en degradé */
-    -webkit-background-clip: text; /*Mise du texte en degradé*/
-    -webkit-text-fill-color: transparent; /*Mise du texte en degradé*/
-    font-size: 5.5em;
-    position: absolute;
-    top: 87%;
-    right: 8%;
-    /* transform: rotate(-10deg); */
-    text-shadow: 5px 0px 15px #1a6dff;
-    z-index: 4;
+  font-family: "Give You Glory", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(
+    180deg,
+    #1a6dff 0%,
+    #c822ff 60%
+  ); /*Mise du texte en degradé */
+  -webkit-background-clip: text; /*Mise du texte en degradé*/
+  -webkit-text-fill-color: transparent; /*Mise du texte en degradé*/
+  font-size: 5.5em;
+  position: absolute;
+  top: 87%;
+  right: 8%;
+  /* transform: rotate(-10deg); */
+  text-shadow: 5px 0px 15px #1a6dff;
+  z-index: 4;
 }
 
 #profile_text {
-    width: 70%;
-    height: 60%;
-    font-size: 2.35em;
-    padding: 4%;
-    background-color: rgb(50, 50, 50);
-    box-shadow: 5px 5px 50px white;
-    border-radius: 100px 5px 100px 5px;
-    border-bottom: 4px inset rgb(50, 50, 50);
+  width: 70%;
+  height: 60%;
+  font-size: 2.35em;
+  padding: 4%;
+  background-color: rgb(50, 50, 50);
+  box-shadow: 5px 5px 50px white;
+  border-radius: 100px 5px 100px 5px;
+  border-bottom: 4px inset rgb(50, 50, 50);
 }
 
 #name_tag {
-    font-family: "Give You Glory", cursive;
-    font-weight: 400;
-    font-style: normal;
-    color: #fac700;
-    font-size: 1.3em;
-    transform: rotate(-10deg);
-    text-shadow: 5px 0px 15px #fac700;
+  font-family: "Give You Glory", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #fac700;
+  font-size: 1.3em;
+  transform: rotate(-10deg);
+  text-shadow: 5px 0px 15px #fac700;
 }
 
 #splash {
-    min-width: 800px;
-    position: absolute;
-    top: 30%;
-    right: 12%;
-    z-index: 3;
-    transform: rotate(10deg);
-    opacity: 0.3;
+  min-width: 800px;
+  position: absolute;
+  top: 30%;
+  right: 12%;
+  z-index: 3;
+  transform: rotate(10deg);
+  opacity: 0.3;
 }
 
 /*SECTION SKILLS*/
 
 #skills p {
-    padding-bottom: 10%;
+  padding-bottom: 10%;
 }
 
 #front_end,
@@ -195,23 +203,23 @@ section h2 {
 #languages,
 #soft_skills,
 #collaboration {
-    width: 300px;
-    height: 550px;
-    padding-top: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: top;
-    background-color: #323232;
-    box-shadow: 5px 5px 20px white;
-    border-radius: 60px 5px 60px 5px;
-    border-bottom: 4px inset rgb(50, 50, 50);
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 3%;
-    font-size: 1.2em;
-    font-weight: 200;
-    text-align: center;
+  width: 300px;
+  height: 550px;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  background-color: #323232;
+  box-shadow: 5px 5px 20px white;
+  border-radius: 60px 5px 60px 5px;
+  border-bottom: 4px inset rgb(50, 50, 50);
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 3%;
+  font-size: 1.2em;
+  font-weight: 200;
+  text-align: center;
 }
 
 #front_end div,
@@ -221,401 +229,506 @@ section h2 {
 #social_media div,
 #languages div,
 #collaboration div {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 3%;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 3%;
 }
 
 .html {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/html.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/html.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .html:hover {
-    background-image: url("./assets/icons/html_hover.png");
-    background-size: cover;
-    transform: scale(1.1);
+  background-image: url("./assets/icons/html_hover.png");
+  background-size: cover;
+  transform: scale(1.1);
 }
 
 .css {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/css.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/css.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .css:hover {
-    background-image: url("./assets/icons/css_hover.png");
-    background-size: cover;
-    transform: scale(1.1);
+  background-image: url("./assets/icons/css_hover.png");
+  background-size: cover;
+  transform: scale(1.1);
 }
 
 .js {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/js.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/js.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .js:hover {
-    background-image: url("./assets/icons/js_hover.png");
-    background-size: cover;
-    transform: scale(1.5);
+  background-image: url("./assets/icons/js_hover.png");
+  background-size: cover;
+  transform: scale(1.5);
 }
 
 .react {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/react.png");
-    background-size: cover;
-    transition: background-image 0.4s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/react.png");
+  background-size: cover;
+  transition: background-image 0.4s ease;
 }
 
 .react:hover {
-    background-image: url("./assets/icons/react_hover.png");
-    background-size: cover;
-    transform: scale(1.1);
+  background-image: url("./assets/icons/react_hover.png");
+  background-size: cover;
+  transform: scale(1.1);
 }
 
 .node {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/nodeJs.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/nodeJs.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .node:hover {
-    background-image: url("./assets/icons/node_hover.png");
-    background-size: cover;
-    transform: scale(1.5);
+  background-image: url("./assets/icons/node_hover.png");
+  background-size: cover;
+  transform: scale(1.5);
 }
 
 .wordpress {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/wordpress.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/wordpress.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .wordpress:hover {
-    background-image: url("./assets/icons/wordpress_hover.png");
-    background-size: cover;
-    transform: scale(1.5);
+  background-image: url("./assets/icons/wordpress_hover.png");
+  background-size: cover;
+  transform: scale(1.5);
 }
 
 .word {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/word.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/word.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .word:hover {
-    background-image: url("./assets/icons/word_hover.png");
-    background-size: cover;
-    transform: scale(1.1);
+  background-image: url("./assets/icons/word_hover.png");
+  background-size: cover;
+  transform: scale(1.1);
 }
 
 .excel {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/excel.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/excel.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .excel:hover {
-    background-image: url("./assets/icons/excel_hover.png");
-    background-size: cover;
-    transform: scale(1.1);
+  background-image: url("./assets/icons/excel_hover.png");
+  background-size: cover;
+  transform: scale(1.1);
 }
 
 .ppt {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/ppt.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/ppt.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .ppt:hover {
-    background-image: url("./assets/icons/ppt_hover.png");
-    background-size: cover;
-    transform: scale(1.1);
+  background-image: url("./assets/icons/ppt_hover.png");
+  background-size: cover;
+  transform: scale(1.1);
 }
 
 .outlook {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/outlook.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/outlook.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .outlook:hover {
-    background-image: url("./assets/icons/outlook_hover.png");
-    background-size: cover;
-    transform: scale(1.1);
+  background-image: url("./assets/icons/outlook_hover.png");
+  background-size: cover;
+  transform: scale(1.1);
 }
 
 .teams {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/teams.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/teams.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .teams:hover {
-    background-image: url("./assets/icons/teams_hover.png");
-    background-size: cover;
-    transform: scale(1.1);
+  background-image: url("./assets/icons/teams_hover.png");
+  background-size: cover;
+  transform: scale(1.1);
 }
 
 .onedrive {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/onedrive.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/onedrive.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .onedrive:hover {
-    background-image: url("./assets/icons/onedrive_hover.png");
-    background-size: cover;
-    transform: scale(1.1);
+  background-image: url("./assets/icons/onedrive_hover.png");
+  background-size: cover;
+  transform: scale(1.1);
 }
 
 .photoshop {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/photshop.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/photshop.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .photoshop:hover {
-    background-image: url("./assets/icons/photoshop_hover.png");
-    background-size: cover;
-    transform: scale(1.5);
+  background-image: url("./assets/icons/photoshop_hover.png");
+  background-size: cover;
+  transform: scale(1.5);
 }
 
 .illustrator {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/illustrator.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/illustrator.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .illustrator:hover {
-    background-image: url("./assets/icons/illustrator_hover.png");
-    background-size: cover;
-    transform: scale(1.5);
+  background-image: url("./assets/icons/illustrator_hover.png");
+  background-size: cover;
+  transform: scale(1.5);
 }
 
 .animate {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/animate.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/animate.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .animate:hover {
-    background-image: url("./assets/icons/animate_hover.png");
-    background-size: cover;
-    transform: scale(1.5);
+  background-image: url("./assets/icons/animate_hover.png");
+  background-size: cover;
+  transform: scale(1.5);
 }
 
 .figma {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/figma.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/figma.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .figma:hover {
-    background-image: url("./assets/icons/figma_hover.png");
-    background-size: cover;
-    transform: scale(1.5);
+  background-image: url("./assets/icons/figma_hover.png");
+  background-size: cover;
+  transform: scale(1.5);
 }
 
 .facebook_icon {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/facebook_icon.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/facebook_icon.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .facebook_icon:hover {
-    background-image: url("./assets/icons/facebook_hover.png");
-    background-size: cover;
-    transform: scale(1.5);
+  background-image: url("./assets/icons/facebook_hover.png");
+  background-size: cover;
+  transform: scale(1.5);
 }
 
 .instagram_icon {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/instagram_icon.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/instagram_icon.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .instagram_icon:hover {
-    background-image: url("./assets/icons/instagram_hover.png");
-    background-size: cover;
-    transform: scale(1.5);
+  background-image: url("./assets/icons/instagram_hover.png");
+  background-size: cover;
+  transform: scale(1.5);
 }
 
 .linkedin_icon {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/linkedin_icon.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/linkedin_icon.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .linkedin_icon:hover {
-    background-image: url("./assets/icons/linkedin_hover.png");
-    background-size: cover;
-    transform: scale(1.5);
+  background-image: url("./assets/icons/linkedin_hover.png");
+  background-size: cover;
+  transform: scale(1.5);
 }
 
 .x_icon {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/x_icon.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/x_icon.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .x_icon:hover {
-    background-image: url("./assets/icons/x_hover.png");
-    background-size: cover;
-    transform: scale(1.5);
+  background-image: url("./assets/icons/x_hover.png");
+  background-size: cover;
+  transform: scale(1.5);
 }
 
 .vsCode {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/vsCode.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/vsCode.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .vsCode:hover {
-    background-image: url("./assets/icons/vsCode_hover.png");
-    background-size: cover;
-    transform: scale(1.5);
+  background-image: url("./assets/icons/vsCode_hover.png");
+  background-size: cover;
+  transform: scale(1.5);
 }
 
 .git {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/git.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/git.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .git:hover {
-    background-image: url("./assets/icons/git_hover.png");
-    background-size: cover;
-    transform: scale(1.1);
+  background-image: url("./assets/icons/git_hover.png");
+  background-size: cover;
+  transform: scale(1.1);
 }
 
 .gitHub {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/gitHub.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/gitHub.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
 .gitHub:hover {
-    background-image: url("./assets/icons/gitHub_hover.png");
-    background-size: cover;
-    transform: scale(1.1);
+  background-image: url("./assets/icons/gitHub_hover.png");
+  background-size: cover;
+  transform: scale(1.1);
 }
 
 .netlify {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/icons/netlify.png");
-    background-size: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/icons/netlify.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 .netlify:hover {
-    background-image: url("./assets/icons/netlify_hover.png");
-    background-size: cover;
-    transform: scale(1.5);
+  background-image: url("./assets/icons/netlify_hover.png");
+  background-size: cover;
+  transform: scale(1.5);
 }
 
 .soft_skills_element {
-    color: #fac700;
-    font-weight: 200;
-    margin-bottom: 2%;
+  color: #fac700;
+  font-weight: 200;
+  margin-bottom: 2%;
 }
 
 /*SECTION ACHIEVEMENTS*/
 
-#achievements div {
-    width: 380px;
-    height: 380px;
-    background-color: rgb(50, 50, 50);
-    box-shadow: 5px 5px 20px white;
-    border-radius: 60px 5px 60px 5px;
-    border-bottom: 4px inset rgb(50, 50, 50);
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 3%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 1.2em;
-    font-weight: 200;
+
+#achievements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#achievements a div {
+  width: 380px;
+  height: 220px;
+  background-color: rgb(50, 50, 50);
+  box-shadow: 5px 5px 20px white;
+  border-radius: 60px 5px 60px 5px;
+  border-bottom: 4px inset rgb(50, 50, 50);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+#Regal-Ride-Preview {
+  background-image: url("./assets/images/Regal-Ride-Preview.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.achievements_languages {
+  font-size: 2em;
+  color: #fac700;
+  position: absolute;
+  top: -30%;
+  -webkit-animation: heartbeat 2s ease-in-out infinite both;
+  animation: heartbeat 2s ease-in-out infinite both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2025-2-7 14:17:5
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
 }
 
 /*SECTION CONTACT*/
 
 #contact {
-    display: flex;
-    justify-content: center;
-    align-items: top;
+  display: flex;
+  justify-content: center;
+  align-items: top;
 }
 
 #contact a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 #contact a > p {
-    margin-top: 10%;
-    font-size: 1.2em;
+  margin-top: 10%;
+  font-size: 1.2em;
 }
 
 #contact a:hover {
-    text-decoration: none;
-    color: #fac700;
-    font-family: "Raleway", sans-serif;
-    font-size: 1.4em;
-    font-weight: 500;
+  text-decoration: none;
+  color: #fac700;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4em;
+  font-weight: 500;
 }
 
 #contact a:active {
-    text-decoration: none;
-    color: #fac700;
+  text-decoration: none;
+  color: #fac700;
 }
 
 #mail_contact,
@@ -623,59 +736,59 @@ section h2 {
 #linkedin_contact,
 #gitHub_contact,
 #curVit_contact {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 #mail_contact_img {
-    width: 120px;
-    height: 120px;
-    background-image: url("./assets/icons/mail_contact.png");
-    background-position: cover;
-    background-repeat: no-repeat;
-    cursor: pointer;
+  width: 120px;
+  height: 120px;
+  background-image: url("./assets/icons/mail_contact.png");
+  background-position: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 #phone_contact_img {
-    width: 120px;
-    height: 120px;
-    background-image: url("./assets/icons/phone_contact.png");
-    background-position: cover;
-    background-repeat: no-repeat;
-    cursor: pointer;
+  width: 120px;
+  height: 120px;
+  background-image: url("./assets/icons/phone_contact.png");
+  background-position: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 #gitHub_contact_img {
-    width: 120px;
-    height: 120px;
-    background-image: url("./assets/icons/gitHub_contact.png");
-    background-position: cover;
-    background-repeat: no-repeat;
-    cursor: pointer;
+  width: 120px;
+  height: 120px;
+  background-image: url("./assets/icons/gitHub_contact.png");
+  background-position: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 #linkedin_contact_img {
-    width: 120px;
-    height: 120px;
-    background-image: url("./assets/icons/linkedin_contact.png");
-    background-position: cover;
-    background-repeat: no-repeat;
-    cursor: pointer;
+  width: 120px;
+  height: 120px;
+  background-image: url("./assets/icons/linkedin_contact.png");
+  background-position: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 #curVit_contact_img {
-    width: 120px;
-    height: 120px;
-    background-image: url("./assets/icons/cv_contact.png");
-    background-position: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    cursor: pointer;
+  width: 120px;
+  height: 120px;
+  background-image: url("./assets/icons/cv_contact.png");
+  background-position: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 #mail_contact_click,
@@ -683,143 +796,144 @@ section h2 {
 #linkedin_contact_click,
 #gitHub_contact_click,
 #curVit_contact_click {
-    width: 100%;
-    display: none;
-    font-family: "Raleway", sans-serif;
-    font-size: 1.2em;
-    letter-spacing: 0.1em;
-    font-weight: 200;
-    text-align: center;
-    cursor: pointer;
+  width: 100%;
+  display: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  font-weight: 200;
+  text-align: center;
+  cursor: pointer;
 }
 
 #typing {
-    height: 10vh;
-    /*This part is important for centering*/
-    display: grid;
-    place-items: center;
+  height: 10vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
 }
 
 #typing_text {
-    width: 22ch;
-    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 30px solid #fac700;
-    color: #fac700;
-    font-family: monospace;
-    font-size: 4em;
+  width: 22ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 30px solid #fac700;
+  color: #fac700;
+  font-family: monospace;
+  font-size: 4em;
 }
 
 @keyframes typing {
-    from {
-        width: 0;
-    }
+  from {
+    width: 0;
+  }
 }
 
 @keyframes blink {
-    50% {
-        border-color: transparent;
-    }
+  50% {
+    border-color: transparent;
+  }
 }
 
 /* CV - EN*/
 #aside_cv {
-    width: 50px;
-    min-height: 0;
-    height: auto;
-    position: fixed;
-    top: 20%;
-    right: 0%;
-    background-color: #fac700;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 15px;
-    border-radius: 10px 0 0 10px;
-    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
-    z-index: 200;
+  width: 50px;
+  min-height: 0;
+  height: auto;
+  position: fixed;
+  top: 20%;
+  right: 0%;
+  background-color: #fac700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
+  z-index: 200;
 }
 
 #pdf_icon {
-    width: 50px;
-    height: 50px;
-    background-image: url(./assets/icons/pdf.png);
-    background-position: contain;
-    background-repeat: no-repeat;
-    background-size: 100%;
+  width: 50px;
+  height: 50px;
+  background-image: url(./assets/icons/pdf.png);
+  background-position: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #fr_flag {
-    width: 50px;
-    height: 50px;
-    background-image: url(./assets/icons/FRflag.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 50px;
+  height: 50px;
+  background-image: url(./assets/icons/FRflag.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #en_flag {
-    width: 50px;
-    height: 50px;
-    background-image: url(./assets/icons/ENflag.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-image: url(./assets/icons/ENflag.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
 }
 
 #cv_main {
-    display: flex;
-    justify-content: space-between;
-    align-items: top;
-    font-size: 1.2em;
-    font-weight: 200;
-    line-height: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  font-size: 1.2em;
+  font-weight: 200;
+  line-height: 2em;
 }
 
 #free_section {
-    position: absolute;
-    top: 36.7%;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    height: 110px;
-    background: linear-gradient(
-        to right,
-        rgba(250, 199, 0, 0.7) 0%,
-        /* Couleur jaune semi-transparente */ rgba(250, 199, 0, 0.3),
-        /* Transition progressive de la couleur jaune */ rgba(60, 66, 74, 0.3),
-        /* Point de transition vers le gris */ rgba(60, 66, 74, 0.7) /* Couleur grise semi-transparente */
-    );
-    opacity: 80%;
+  position: absolute;
+  top: 36.7%;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 110px;
+  background: linear-gradient(
+    to right,
+    rgba(250, 199, 0, 0.7) 0%,
+    /* Couleur jaune semi-transparente */ rgba(250, 199, 0, 0.3),
+    /* Transition progressive de la couleur jaune */ rgba(60, 66, 74, 0.3),
+    /* Point de transition vers le gris */ rgba(60, 66, 74, 0.7)
+      /* Couleur grise semi-transparente */
+  );
+  opacity: 80%;
 }
 
 #cv_left_section {
-    width: 32vw;
-    height: 250vh;
-    margin-right: 3vw;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  width: 32vw;
+  height: 250vh;
+  margin-right: 3vw;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .left_section_titel {
-    font-family: "Raleway", sans-serif;
-    font-size: 1.5em;
-    font-weight: 300;
-    margin-bottom: 3%;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 3%;
 }
 
 #cv_photo {
-    width: 100%;
+  width: 100%;
 }
 
 #cv_photo img {
-    width: 43%;
+  width: 43%;
 }
 
 #cv_profile,
@@ -827,193 +941,194 @@ section h2 {
 #cv_technical_skills,
 #cv_soft_skills,
 #cv_languages {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(
-        to right,
-        rgba(250, 199, 0, 0.7) 0%,
-        /* Couleur jaune semi-transparente */ rgba(250, 199, 0, 0.3),
-        /* Transition progressive de la couleur jaune */ rgba(60, 66, 74, 0.3),
-        /* Point de transition vers le gris */ rgba(60, 66, 74, 0.7) /* Couleur grise semi-transparente */
-    );
-    opacity: 80%;
-    border-radius: 5px;
-    z-index: 2;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    rgba(250, 199, 0, 0.7) 0%,
+    /* Couleur jaune semi-transparente */ rgba(250, 199, 0, 0.3),
+    /* Transition progressive de la couleur jaune */ rgba(60, 66, 74, 0.3),
+    /* Point de transition vers le gris */ rgba(60, 66, 74, 0.7)
+      /* Couleur grise semi-transparente */
+  );
+  opacity: 80%;
+  border-radius: 5px;
+  z-index: 2;
 }
 
 #skills_div,
 #languages_div {
-    width: 90%;
-    padding: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  width: 90%;
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 #soft_skills_div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #soft_skills_div p {
-    color: white;
+  color: white;
 }
 
 #cv_right_section {
-    width: 65vw;
-    height: 250vh;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.3em;
-    font-weight: 200;
+  width: 65vw;
+  height: 250vh;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3em;
+  font-weight: 200;
 }
 
 #cv_education,
 #cv_proExperience {
-    width: 100%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 #cv_proExperience {
-    margin-top: 8%;
+  margin-top: 8%;
 }
 
 .pre_table_div {
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    gap: 3%;
-    color: #fac700;
-    font-weight: 500;
-    padding-left: 30%;
-    margin-bottom: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 3%;
+  color: #fac700;
+  font-weight: 500;
+  padding-left: 30%;
+  margin-bottom: 3%;
 }
 
 #cv_education table,
 #cv_proExperience table {
-    width: 100%;
-    height: 70%;
+  width: 100%;
+  height: 70%;
 }
 
 #cv_right_section table tr {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 #cv_right_section table td.infos {
-    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.7);
-    padding-bottom: 1%;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.7);
+  padding-bottom: 1%;
 }
 
 strong {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .years {
-    width: 30%;
-    font-size: 1.3em;
-    font-weight: 300;
+  width: 30%;
+  font-size: 1.3em;
+  font-weight: 300;
 }
 
 .infos {
-    width: 70%;
+  width: 70%;
 }
 
 #cv_titel {
-    width: 100%;
-    height: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    line-height: 5em;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  line-height: 5em;
 }
 
 #cv_titel_name {
-    font-size: 3.5em;
+  font-size: 3.5em;
 }
 
 #cv_titel_fonction {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 /* FOOTER */
 
 footer {
-    width: 100vw;
-    height: 10vh;
-    box-shadow: inset 0px 5px 10px -5px #849291;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.2em;
+  width: 100vw;
+  height: 10vh;
+  box-shadow: inset 0px 5px 10px -5px #849291;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
 }
 
 .footer_parts {
-    width: 30%;
-    height: auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 30%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #copyright,
 #private_policy {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 #copyright:hover,
 #private_policy:hover {
-    color: #fac700;
-    transform: scale(1.1);
-    cursor: pointer;
+  color: #fac700;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .icon {
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s ease;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
 }
 
 #facebook {
-    background-image: url("./assets/icons/facebook.png");
+  background-image: url("./assets/icons/facebook.png");
 }
 
 #facebook:hover {
-    background-image: url("./assets/icons/facebookHover.png");
-    transform: scale(1.2);
-    cursor: pointer;
+  background-image: url("./assets/icons/facebookHover.png");
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 #insta {
-    background-image: url("./assets/icons/instagram.png");
+  background-image: url("./assets/icons/instagram.png");
 }
 
 #insta:hover {
-    background-image: url("./assets/icons/instagramHover.png");
-    transform: scale(1.2);
-    cursor: pointer;
+  background-image: url("./assets/icons/instagramHover.png");
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 #linkedin {
-    background-image: url("./assets/icons/linkedin.png");
+  background-image: url("./assets/icons/linkedin.png");
 }
 
 #linkedin:hover {
-    background-image: url("./assets/icons/linkedinHover.png");
-    transform: scale(1.2);
-    cursor: pointer;
+  background-image: url("./assets/icons/linkedinHover.png");
+  transform: scale(1.2);
+  cursor: pointer;
 }
