@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#body_chambre {
+    width: 100vw;
+    height: 100vh;
+}
+
+.body_img {
+    width: 100%;
+    -webkit-animation: kenburns-bottom-left 5s ease-out both;
+    animation: kenburns-bottom-left 5s ease-out both;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    header {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1%;
+    }
+
+    a {
+        color: #6e6969;
+        font-size: 20px;
+        text-decoration: none;
+        position: relative;
+        text-decoration: none;
+    }
+
+    /*Animation sur le A du NAV quand :HOVER */
+    /*----------------------------------------------------------*/
+    a:hover {
+        transform: scale(1.2);
+        color: white;
+    }
+
+    a::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 1.5px;
+        bottom: -10px;
+        left: 0;
+        background-color: white;
+        transform: scaleX(0);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    a:hover::before {
+        transform: scaleX(1);
+    }
+
+    /*----------------------------------------------------------*/
+
+    #img_globe {
+        width: 4%;
+        height: auto;
+        -webkit-animation: slide-fwd-center 2s linear infinite alternate both;
+        animation: slide-fwd-center 2s linear infinite alternate both;
+    }
+
+    h1 {
+        width: 50%;
+        height: auto;
+        text-align: center;
+        font-size: 45px;
+        color: #6e6969;
+        font-weight: 200;
+        animation: myAnim 4s ease-in-out 0s 1 normal both;
+        font-family: "Handlee", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    main {
+        -webkit-box-shadow: 5px 5px 50px 5px #454545;
+        box-shadow: 5px 5px 100px 5px #454545;
+        background-color: #a39e9e;
+        border-radius: 10px;
+        width: 90%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #nav {
+        background-color: aquamarine;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #cards {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img_cards {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+        z-index: -1;
+    }
+
+    #living_cards {
+        -webkit-animation: flip-vertical-left 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+        animation: flip-vertical-left 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+    }
+
+    #living_cards:hover {
+        border: 3px solid white;
+        font-size: 55px;
+    }
+
+    #room_cards {
+        -webkit-animation: flip-vertical-left 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+        animation: flip-vertical-left 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+    }
+
+    #room_cards:hover {
+        border: 3px solid white;
+        font-size: 55px;
+    }
+
+    #kitchen_cards {
+        -webkit-animation: flip-vertical-left 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+        animation: flip-vertical-left 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+    }
+
+    #kitchen_cards:hover {
+        border: 3px solid white;
+        font-size: 55px;
+    }
+
+    #bathroom_cards {
+        -webkit-animation: flip-vertical-left 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+        animation: flip-vertical-left 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+    }
+
+    #bathroom_cards:hover {
+        border: 3px solid white;
+        font-size: 55px;
+    }
+
+    .rooms_cards {
+        width: 20%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid aquamarine;
+        border-radius: 10px;
+        font-size: 40px;
+        color: white;
+        opacity: 0.4;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 15%;
+        color: #6e6969;
+    }
+
+    #p_footer {
+        -webkit-animation: slide-in-left 20s linear 1s infinite both;
+        animation: slide-in-left 20s linear 1s infinite both;
+    }
+}
+
+/* ----------------------------------------------
+animation slide-fwd-center :ANIMATION LOGO GLOBE
+ * ---------------------------------------------- */
+
+@-webkit-keyframes slide-fwd-center {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: perspective(500px) translateZ(0);
+    }
+    100% {
+        -webkit-transform: translateZ(160px);
+        transform: perspective(500px) translateZ(160px);
+    }
+}
+@keyframes slide-fwd-center {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: perspective(500px) translateZ(0);
+    }
+    100% {
+        -webkit-transform: translateZ(160px);
+        transform: perspective(500px) translateZ(160px);
+    }
+}
+
+/* -------------------------------------------------------
+ * animation fade-in-bottom: ANIMATION TITRE PRINCIPAL
+ * -------------------------------------------------------- */
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* -----------------------------------------------
+ * animation slide-in-left: ANIMATION FOOTER 
+ * ----------------------------------------------*/
+
+@keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+}
+
+/* ----------------------------------------------------------
+ * animation flip-vertical-left: ANIMATION SUR LE CARDS PIECES
+ * ----------------------------------------------------------*/
+
+@keyframes flip-vertical-left {
+    0% {
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+        font-size: 0px;
+        opacity: 0, 4;
+    }
+
+    100% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+        opacity: 1;
+    }
+}
+
+/*---------------------------------------------------------------
+ * animation kenburns-bottom-left: ANIMATION BACKGROUND PAGES ANNEXES
+ * -------------------------------------------------------------*/
+
+@keyframes kenburns-bottom-left {
+    0% {
+        -webkit-transform: scale(0.5) translate(0, 0);
+        transform: scale(0.5) translate(0, 0);
+        -webkit-transform-origin: 16% 84%;
+        transform-origin: 16% 84%;
+        opacity: 0.2;
+    }
+    100% {
+        -webkit-transform: scale(1.25) translate(-20px, 15px);
+        transform: scale(1.25) translate(-20px, 15px);
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        opacity: 1;
+    }
+}

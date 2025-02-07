@@ -1,0 +1,50 @@
+
+.mainContact {
+  width: 100vw;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: "GothamOfficeRegular";
+  margin: 0;
+}
+
+.contactTable {
+  border-spacing: 10px;
+}
+
+.visitCard {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+.visitCard > img {
+  width: 400px;
+  height: 300px;
+  border-radius: 3px;
+}
+
+.contactForm {
+  width: 40%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContactH2{
+  width: 100vw;
+  height: 5vh;
+  margin:0; 
+  margin-top: 2%;
+  padding: 0;
+}
+

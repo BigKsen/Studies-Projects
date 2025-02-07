@@ -1,0 +1,226 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estimation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="estimation.js" defer> </script>
+    <title>Immo Corner - Estimation</title>
+</head>
+
+<section id="section1">
+
+    <div id="navbar"> 
+        
+        <div class="logo"><img id="logoImg" src="./elements/logo2.png" alt="logo"></div>    
+
+        <div id="navbar_Rside">
+
+            <a href="./contact.html#section4" target="_blank" class="div_navbar_Rside">
+                <img class="localisationIcon" src="./elements/localisationWhite.png" alt="icone localisation">
+                <p class="localisationText">Nos agences</p>
+            </a>
+
+            <a href="./contact.html#section3" target="_blank" class="div_navbar_Rside">
+                <img class="mailIcon" src="./elements/enveloppeWhite.png" alt="icone mail">    
+                <p class="mailText">Nous écrire</p>
+            </a>
+
+            <a href="./contact.html#section3" target="_blank class" class="div_navbar_Rside">
+                <img class="phoneIcon" src="./elements/telephoneWhite.png" alt="icone telephone">
+                <p class="phoneText">Nous appeler</p>
+            </a>
+        
+        </div>
+
+            
+            <div class="menu">
+                <div class="btn_menu">
+                    <img class="menuIcon" src="./elements/menuWhite.png" alt="icone menu">
+                    <p class="menuText">Menu</p>
+                </div>    
+
+                <div class="dropdownContent">
+                    <a href="./accueil.html" class="menu_content" target="_blank">Accueil</a>
+                    <a href="./recherche.html#vente" class="menu_content" target="_blank">Biens en vente</a>
+                    <a href="./recherche.html#loc"class="menu_content" target="_blank">Biens en location</a>
+                    <a href="./contact.html"class="menu_content" target="_blank">Contact</a>
+                    <a href="./link.html"class="menu_content" target="_blank">Liens utiles</a>
+                </div> 
+            </div>
+
+        </div>
+</section>
+
+<body>
+    <a href="./estimation.html"> <div id="current_page">⬅️ ESTIMATION </div></a>
+    <h2>Ecrivez-nous et on passe vous voir !</h2>
+    <form id="formulaire" method="get" action="">
+        <p id="colon1">
+            <label for="prenom">Votre prénom</label> <br>
+            <input
+                type="text"
+                name="prenom"
+                id="prenom"
+                maxlength="20"
+                placeholder="Alex"
+                required
+            /> <br>
+            
+            <label for="nom">Votre nom:</label><br>
+            <input
+                type="text"
+                name="nom"
+                id="nom"
+                maxlength="20"
+                placeholder="Dupont"
+                required
+            /><br>
+
+            <label for="email">Votre email:</label> <br>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="dupont@gmail.com"
+                    required
+                /><br>
+
+            <label for="tel">Votre téléphone/GSM:</label> <br>
+                <input
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    maxlength="13"
+                    pattern="[0-9]{4}/[0-9{2}.[0-9]{2}.[0-9]{2}"
+                    placeholder="0487/51.53.51"
+                    required
+                /><br>
+
+            <label for="preferences">A quel moment préfèrez-vous être recontacté?</label><br>
+            <textarea
+                type="text"
+                name="preferences"
+                id="preferences"
+                maxlength="40"
+                placeholder="Lundi-Vendredi : de 9h-12h ou Samedi: de 18h-20h"
+                required
+            ></textarea><br>
+            
+        </p>
+        <p id="colon2">
+            <label for="bien">Type de bien:</label><br>
+            <input
+                type="text"
+                name="bien"
+                id="bien"
+                maxlength="20"
+                placeholder="maison/appartement"
+                required
+            /> <br>
+
+            <label for="annee_bien">Année de construction de l'immeuble:</label> <br>
+            <input
+                type="number"
+                name="annee_bien"
+                id="annee_bien"
+                maxlength="4"
+                placeholder="1960"
+                required
+            /> <br>
+
+            <label for="travaux">Travaux majeurs effectués depuis l'acquisition de l'immeuble:</label><br>
+            <textarea
+                type="text"
+                name="travaux"
+                id="travaux"
+                maxlength="200"
+                placeholder="ex: remplacement cuisine/salle de bain - 1995; isolation toiture - 1999; rénovation façade - 2000; etc "
+                required
+            ></textarea> <br>
+            
+            
+            <label for="raison">Raison de la vente:</label> <br>
+            <textarea
+                type="text"
+                name="raison"
+                id="raison"
+                maxlength="30"
+                placeholder="séparation, succession, réinvestissement"
+                required
+            ></textarea><br>
+
+            
+            <label for="info">Informations complémentaires:</label> <br>
+            <textarea
+                type="text"
+                name="info"
+                id="info"
+                maxlength="200"
+                placeholder="Tout détail est important"
+                required
+            ></textarea><br>
+        </p>
+        <input type="submit" value="Soumettre" />
+    </form>
+
+    
+</body>
+
+<footer>
+     <div id="repeatnavbar"> 
+
+        <div class="logo">
+            <a href="./accueil.html#navbar"><img id="logoImg" src="./elements/logo2.png" alt="logo"></a>
+            
+        </div>    
+
+        <div class="localisation">
+            <button class="btn_localisation">                               
+                <a href="./contact.html#section4" target="_blank"><img class="localisationIcon" src="./elements/localisationWhite.png" alt="icone localisation"></a>
+                <p class="localisationText">Nos agences</p>
+            </button>
+        </div>
+
+        <div class="mail">
+            <button class="btn_mail">                                      
+                <a href="./contact.html" target="_blank"><img class="mailIcon" src="./elements/enveloppeWhite.png" alt="icone mail"></a>      
+                <p class="mailText">Nous écrire</p>
+            </button>
+        </div>
+
+        <div class="phone">
+            <button class="btn_phone">                                      
+                <a href="./contact.html" target="_blank"><img class="phoneIcon" src="./elements/telephoneWhite.png" alt="icone telephone"></a>
+                <p class="phoneText">Nous appeler</p>
+            </button>
+        </div>
+    </div>
+
+    <div id="socialNetworks">
+        <img id="twitterIcon" src="./elements/twitterWhite.png" alt="icone twitter">
+        <img id="facebookIcon" src="./elements/facebookWhite.png" alt="icone facebook">
+        <img id="linkedinIcon" src="./elements/linkedinWhite.png" alt="icone linkedIn">
+    </div>
+
+    <div id="copyrights">
+        <div id="textCopyrights">Copyrights immoCorner 2024</div>
+        <div id="legacy">
+            <div id="legalMentions"> Mentions légales &nbsp &nbsp   </div> 
+            <div id="generalConditions">Conditions générales de vente &nbsp  &nbsp  </div>
+            <div id="privacy">Protection de données &nbsp &nbsp   </div>
+        </div>
+        <div id="webCreator">by Kozjanova Ksenia</div>
+    </div>
+
+</footer>
+
+
+
+
+</html>

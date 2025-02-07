@@ -1,0 +1,394 @@
+{
+	"board": [
+		{
+			"heure": "15:13",
+			"station": "Quievrain",
+			"voie": "8",
+			"retard": 0
+		},
+		{
+			"heure": "15:15",
+			"station": "Knokke",
+			"voie": "4",
+			"retard": 0
+		},
+		{
+			"heure": "15:15",
+			"station": "Anvers-Central",
+			"voie": "11",
+			"retard": 0
+		},
+		{
+			"heure": "15:18",
+			"station": "Binche",
+			"voie": "12",
+			"retard": 0
+		},
+		{
+			"heure": "15:19",
+			"station": "Bruxelles-Midi",
+			"voie": "8",
+			"retard": 3
+		},
+		{
+			"heure": "15:20",
+			"station": "Schaerbeek",
+			"voie": "11",
+			"retard": 0
+		},
+		{
+			"heure": "15:20",
+			"station": "Brussels Airport - Zaventem",
+			"voie": "1",
+			"retard": 0
+		},
+		{
+			"heure": "15:22",
+			"station": "Genk",
+			"voie": "6",
+			"retard": 0
+		},
+		{
+			"heure": "15:23",
+			"station": "Braine-le-Comte",
+			"voie": "10",
+			"retard": 0
+		},
+		{
+			"heure": "15:23",
+			"station": "Courtrai",
+			"voie": "?",
+			"retard": 0
+		},
+		{
+			"heure": "15:24",
+			"station": "Bruxelles-Midi",
+			"voie": "12",
+			"retard": 0
+		},
+		{
+			"heure": "15:25",
+			"station": "Landen",
+			"voie": "3",
+			"retard": 0
+		},
+		{
+			"heure": "15:27",
+			"station": "Courtrai",
+			"voie": "9",
+			"retard": 1
+		},
+		{
+			"heure": "15:28",
+			"station": "Bruxelles-Midi",
+			"voie": "5",
+			"retard": 15
+		},
+		{
+			"heure": "15:29",
+			"station": "Saint-Nicolas",
+			"voie": "1",
+			"retard": 0
+		},
+		{
+			"heure": "15:30",
+			"station": "Louvain-la-Neuve",
+			"voie": "7",
+			"retard": 0
+		},
+		{
+			"heure": "15:31",
+			"station": "Bruxelles-Midi",
+			"voie": "8",
+			"retard": 1
+		},
+		{
+			"heure": "15:32",
+			"station": "Charleroi-Central",
+			"voie": "12",
+			"retard": 1
+		},
+		{
+			"heure": "15:32",
+			"station": "Anvers-Central",
+			"voie": "11",
+			"retard": 0
+		},
+		{
+			"heure": "15:34",
+			"station": "Brussels Airport - Zaventem",
+			"voie": "6",
+			"retard": 0
+		},
+		{
+			"heure": "15:34",
+			"station": "Courtrai",
+			"voie": "2",
+			"retard": 5
+		},
+		{
+			"heure": "15:37",
+			"station": "Gand-Saint-Pierre",
+			"voie": "4",
+			"retard": 0
+		},
+		{
+			"heure": "15:38",
+			"station": "Anvers-Central",
+			"voie": "11",
+			"retard": 0
+		},
+		{
+			"heure": "15:40",
+			"station": "Louvain",
+			"voie": "10",
+			"retard": 0
+		},
+		{
+			"heure": "15:40",
+			"station": "Blankenberge",
+			"voie": "8",
+			"retard": 1
+		},
+		{
+			"heure": "15:40",
+			"station": "Welkenraedt",
+			"voie": "1",
+			"retard": 0
+		},
+		{
+			"heure": "15:42",
+			"station": "Zottegem",
+			"voie": "12",
+			"retard": 0
+		},
+		{
+			"heure": "15:43",
+			"station": "Arlon",
+			"voie": "7",
+			"retard": 0
+		},
+		{
+			"heure": "15:43",
+			"station": "Mons",
+			"voie": "4",
+			"retard": 0
+		},
+		{
+			"heure": "15:44",
+			"station": "Turnhout",
+			"voie": "11",
+			"retard": 0
+		},
+		{
+			"heure": "15:45",
+			"station": "Gand-Saint-Pierre",
+			"voie": "9",
+			"retard": 0
+		},
+		{
+			"heure": "15:47",
+			"station": "Nivelles",
+			"voie": "12",
+			"retard": 0
+		},
+		{
+			"heure": "15:47",
+			"station": "Brussels Airport - Zaventem",
+			"voie": "3",
+			"retard": 0
+		},
+		{
+			"heure": "15:49",
+			"station": "Termonde",
+			"voie": "1",
+			"retard": 0
+		},
+		{
+			"heure": "15:49",
+			"station": "Tournai",
+			"voie": "8",
+			"retard": 0
+		},
+		{
+			"heure": "15:49",
+			"station": "Liège-Guillemins",
+			"voie": "5",
+			"retard": 0
+		},
+		{
+			"heure": "15:49",
+			"station": "Anvers-Central",
+			"voie": "11",
+			"retard": 0
+		},
+		{
+			"heure": "15:51",
+			"station": "Ostende",
+			"voie": "4",
+			"retard": 2
+		},
+		{
+			"heure": "15:52",
+			"station": "Louvain-la-Neuve",
+			"voie": "7",
+			"retard": 0
+		},
+		{
+			"heure": "15:52",
+			"station": "Saint-Ghislain",
+			"voie": "10",
+			"retard": 0
+		},
+		{
+			"heure": "15:53",
+			"station": "Braine-le-Comte",
+			"voie": "9",
+			"retard": 0
+		},
+		{
+			"heure": "15:55",
+			"station": "Tongres",
+			"voie": "1",
+			"retard": 0
+		},
+		{
+			"heure": "15:56",
+			"station": "Bruxelles-Midi",
+			"voie": "12",
+			"retard": 0
+		},
+		{
+			"heure": "15:56",
+			"station": "Termonde",
+			"voie": "2",
+			"retard": 0
+		},
+		{
+			"heure": "15:56",
+			"station": "Amsterdam CS",
+			"voie": "6",
+			"retard": 0
+		},
+		{
+			"heure": "15:57",
+			"station": "Poperinge",
+			"voie": "8",
+			"retard": 0
+		},
+		{
+			"heure": "16:01",
+			"station": "Tournai",
+			"voie": "9",
+			"retard": 1
+		},
+		{
+			"heure": "16:02",
+			"station": "Brussels Airport - Zaventem",
+			"voie": "6",
+			"retard": 0
+		},
+		{
+			"heure": "16:02",
+			"station": "Hasselt",
+			"voie": "3",
+			"retard": 0
+		},
+		{
+			"heure": "16:02",
+			"station": "Essen",
+			"voie": "11",
+			"retard": 0
+		},
+		{
+			"heure": "16:02",
+			"station": "Charleroi-Central",
+			"voie": "12",
+			"retard": 0
+		},
+		{
+			"heure": "16:04",
+			"station": "Courtrai",
+			"voie": "5",
+			"retard": 0
+		},
+		{
+			"heure": "16:05",
+			"station": "Bruxelles-Midi",
+			"voie": "8",
+			"retard": 0
+		},
+		{
+			"heure": "16:06",
+			"station": "Alost",
+			"voie": "1",
+			"retard": 0
+		},
+		{
+			"heure": "16:06",
+			"station": "Anvers-Central",
+			"voie": "10",
+			"retard": 0
+		},
+		{
+			"heure": "16:07",
+			"station": "Eupen",
+			"voie": "7",
+			"retard": 0
+		},
+		{
+			"heure": "16:08",
+			"station": "Bruxelles-Midi",
+			"voie": "9",
+			"retard": 2
+		},
+		{
+			"heure": "16:08",
+			"station": "Gand-Saint-Pierre",
+			"voie": "4",
+			"retard": 0
+		},
+		{
+			"heure": "16:10",
+			"station": "Louvain",
+			"voie": "6",
+			"retard": 0
+		},
+		{
+			"heure": "16:11",
+			"station": "Mol",
+			"voie": "11",
+			"retard": 0
+		},
+		{
+			"heure": "16:11",
+			"station": "Tongres",
+			"voie": "3",
+			"retard": 0
+		},
+		{
+			"heure": "16:12",
+			"station": "Nivelles",
+			"voie": "12",
+			"retard": 0
+		},
+		{
+			"heure": "16:12",
+			"station": "Zottegem",
+			"voie": "2",
+			"retard": 1
+		},
+		{
+			"heure": "16:13",
+			"station": "Liège-Saint-Lambert",
+			"voie": "7",
+			"retard": 0
+		},
+		{
+			"heure": "16:13",
+			"station": "Quievrain",
+			"voie": "9",
+			"retard": 1
+		}
+	]
+}

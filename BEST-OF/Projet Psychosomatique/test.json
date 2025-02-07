@@ -1,0 +1,132 @@
+{
+    "links": {
+        "self": "/authors/OL6593357A/works.json",
+            "author": "/authors/OL6593357A"
+    },
+    "size": 3,
+        "entries":
+    [
+            {
+                "type": {
+                    "key": "/type/work"
+                },
+                "title": "Sila namerenii͡a",
+                "subjects": [
+                    "Achievement motivation",
+                    "Self-actualization (Psychology)",
+                    "Motivation (Psychology)",
+                    "Success",
+                    "Psychological aspects",
+                    "Motivation",
+                    "Motivation d'accomplissement",
+                    "Motivation (Psychologie)",
+                    "Succès",
+                    "Aspect psychologique"
+                ],
+                "authors": [
+                    {
+                        "type": {
+                            "key": "/type/author_role"
+                        },
+                        "author": {
+                            "key": "/authors/OL6593357A"
+                        }
+                    }
+                ],
+                "description": {
+                    "type": "/type/text",
+                    "value": "Recognized self-help and self-development expert Valeriĭ Sinelʹnikov teaches us how to realize our Intentions and achieve our dreams and desires."
+                },
+                "covers": [12945766],
+                "key": "/works/OL28962377W",
+                "latest_revision": 1,
+                "revision": 1,
+                "created": {
+                    "type": "/type/datetime",
+                    "value": "2022-10-13T05:03:57.535025"
+                },
+                "last_modified": {
+                    "type": "/type/datetime",
+                    "value": "2022-10-13T05:03:57.535025"
+                }
+            },
+            {
+                "last_modified": {
+                    "type": "/type/datetime",
+                    "value": "2019-05-24T08:50:02.057295"
+                },
+
+
+                "title": "Vozli︠u︡bi boleznʹ svoi︠u︡",
+                "created": {
+                    "type": "/type/datetime",
+                    "value": "2019-05-24T08:50:02.057295"
+                },
+                "subjects": [
+                    "Mind and body therapies",
+                    "Self-management (Psychology)",
+                    "Mental healing",
+                    "Mind and body",
+                    "Alternative medicine",
+                    "Self-actualization (Psychology)",
+                    "Self-help techniques"
+                ],
+                "latest_revision": 1,
+                "key": "/works/OL19748817W",
+                "authors": [
+                    {
+                        "type": {
+                            "key": "/type/author_role"
+                        },
+                        "author": {
+                            "key": "/authors/OL6593357A"
+                        }
+                    }
+                ],
+                "type": {
+                    "key": "/type/work"
+                },
+                "revision": 1
+            },
+            {
+                "covers": [9324524],
+                "first_publish_date": "2006",
+                "latest_revision": 4,
+                "key": "/works/OL13752376W",
+                "authors": [
+                    {
+                        "type": {
+                            "key": "/type/author_role"
+                        },
+                        "author": {
+                            "key": "/authors/OL6593357A"
+                        }
+                    }
+                ],
+                "subjects": [
+                    "Applied Psychology",
+                    "Attitude (Psychology)",
+                    "Behavior modification",
+                    "Meditation",
+                    "Psychology",
+                    "Psychology, Applied",
+                    "Self-help techniques"
+                ],
+                "created": {
+                    "type": "/type/datetime",
+                    "value": "2009-12-11T10:30:59.382663"
+                },
+
+                
+                "title": "Privivka ot stressa",
+                "last_modified": {
+                    "type": "/type/datetime",
+                    "value": "2020-04-09T04:50:01.983501"
+                },
+                "type": {
+                    "key": "/type/work"
+                },
+                "revision": 4
+            }
+        ]
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap"
+      rel="stylesheet" />
+    <script src="cv.js" defer></script>
+    <!-- biblio:html2canvas-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <!-- biblio: jsPDF-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <title>CV EN</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html#profile"><div class="nav">Profile</div></a>
+      <a href="index.html#skills"><div class="nav">Skills</div></a>
+      <a href="index.html#achievements"><div class="nav">Achievements</div></a>
+      <a href="index.html#contact"><div class="nav">Contact</div></a>
+    </header>
+
+    <section id="aside_cv">
+      <div id="pdf_icon"></div></a>
+      <div id="fr_flag"  style="opacity: 0.35;"></div>
+      <div id="en_flag"></div>
+    </section>
+
+    <main id="cv_main">
+      <div id="free_section"></div>
+
+      <section id="cv_left_section">
+        <div id="cv_photo">
+          <img src="./assets/images/cv_photo2.png" alt="cv_photo" />
+        </div>
+
+        <div id="cv_profile">
+          <p class="left_section_titel">PROFILE</p>
+          <p>Belgian - Born in 1987 - Driving licence B</p>
+          <p>Reliable - Creative - Curious</p>
+        </div>
+
+        <div id="cv_contact">
+          <p class="left_section_titel">CONTACT</p>
+          <p>+32 487/511.766</p>
+          <p>Brussels</p>
+          <p>ksenia.kozjanova@hotmail.com</p>
+          <p>linkedin.com/in/ksenia-kozjanova</p>
+          <p>e-address of portfolio</p>
+        </div>
+
+        <div id="cv_technical_skills">
+          <p class="left_section_titel">SKILLS</p>
+          <div id="skills_div">
+            <div class="html"></div>
+            <div class="css"></div>
+            <div class="js"></div>
+            <div class="react"></div>
+            <div class="node"></div>
+            <div class="wordpress"></div>
+            <div class="vsCode"></div>
+            <div class="git"></div>
+            <div class="gitHub"></div>
+            <div class="netlify"></div>
+            <div class="photoshop"></div>
+            <div class="illustrator"></div>
+            <div class="animate"></div>
+            <div class="figma"></div>
+            <div class="facebook_icon"></div>
+            <div class="instagram_icon"></div>
+            <div class="linkedin_icon"></div>
+            <div class="x_icon"></div>
+            <div class="word"></div>
+            <div class="excel"></div>
+            <div class="ppt"></div>
+            <div class="outlook"></div>
+            <div class="teams"></div>
+            <div class="onedrive"></div>
+          </div>
+        </div>
+
+        <div id="cv_soft_skills">
+          <div id="soft_skills_div">
+            <p class="left_section_titel">SOFT SKILLS</p>
+            <p class="soft_skills_element">Reliability</p>
+            <p class="soft_skills_element">Creativity</p>
+            <p class="soft_skills_element">Curiosity</p>
+            <p class="soft_skills_element">Collaboration & Communication</p>
+            <p class="soft_skills_element">Attention to Detail</p>
+            <p class="soft_skills_element">Problem-Solving</p>
+            <p class="soft_skills_element">Organizational skills</p>
+            <p class="soft_skills_element">Autonomy</p>
+          </div>
+        </div>
+
+        <div id="cv_languages">
+          <p class="left_section_titel">LANGUAGES</p>
+          <div id="languages_div">
+            <img src="./assets/icons/FRstar.png" alt="FR_icon" />
+            <img src="./assets/icons/RUstar.png" alt="RU_icon" />
+            <img src="./assets/icons/ENstar.png" alt="EN_icon" />
+            <img src="./assets/icons/NLstar.png" alt="NL_icon" />
+          </div>
+        </div>
+      </section>
+
+      <section id="cv_right_section">
+        <div id="cv_titel">
+          <p id="cv_titel_name">Kozjanova Ksenia</p>
+          <p id="cv_titel_fonction">Junior Frontend Developer</p>
+        </div>
+
+        <div id="cv_education">
+          <div class="pre_table_div">
+            <p>EDUCATION</p>
+            <img src="./assets/icons/hat_icon_color.png" alt="hat_icon" />
+          </div>
+          <table>
+            <tr>
+              <td class="years">2024-2025</td>
+              <td class="infos">
+                <strong>Frontend Development </strong><br />Training Certificate <br />
+                Interface3 - Brussels
+              </td>
+            </tr>
+
+            <tr>
+              <td class="years">2024</td>
+              <td class="infos">
+                <strong>E-learning programming basics <br />
+                  Coding week</strong> - Molengeek - Brussels
+              </td>
+            </tr>
+
+            <tr>
+              <td class="years">2022-2023</td>
+              <td class="infos">
+                <strong>Self improvment </strong>individual coaching <br />Randstad - Brussels
+              </td>
+            </tr>
+
+            <tr>
+              <td class="years">2014-2017</td>
+              <td class="infos">
+                <strong>Real Estate - Business Leader training</strong> <br />Training
+                Certificate <br />EFPME - Brussels
+              </td>
+            </tr>
+
+            <tr>
+              <td class="years">2006-2009</td>
+              <td class="infos">
+                <strong>Management Assistance </strong><br />Bachelor's degree <br />
+                Section languages EN/NL/IT/ES<br />HEG-ESCEDI/ISALT - Brussels
+              </td>
+            </tr>
+
+            <tr>
+              <td class="years">2005-2006</td>
+              <td class="infos">
+                <strong>Translation/Interpretation </strong><br />Start bachelor's degree <br />
+                Section EN/DE <br />ILMH - Brussels
+              </td>
+            </tr>
+
+            <tr>
+              <td class="years">1999-2005</td>
+              <td class="infos">
+                <strong>Upper Secondary Education</strong><br />CESS <br />CSPU - Brussels
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="cv_proExperience">
+          <div class="pre_table_div">
+            <p>PRO EXPERIENCE</p>
+            <img src="./assets/icons/tie_icon_color.png" alt="tie_icon" />
+          </div>
+          <table>
+            <tr>
+              <td class="years">2017-2020</td>
+              <td class="infos">
+                <strong>Brokerage activities - Self employment </strong><br />Sales/rentals
+                <br />- Property One Real Estate - Brussels <br />- Open The
+                Door Real Estate - Waterloo
+              </td>
+            </tr>
+
+            <tr>
+              <td class="years">2017-2018</td>
+              <td class="infos">
+                <strong>Office Management</strong> <br />Property One Real Estate <br />
+                Brussels
+              </td>
+            </tr>
+
+            <tr>
+              <td class="years">2009-2016</td>
+              <td class="infos">
+                <strong>Hospital Care Coordination</strong> <br />Cardiology Department - UCL
+                Saint-Luc <br />
+                Brussels
+              </td>
+            </tr>
+
+            <tr>
+              <td class="years">2007-2009</td>
+              <td class="infos">
+                <strong>Internship in management assistance</strong> <br />
+                - NET2s IT Solutions <br />
+                - Coca-Cola Services - Marketing Department <br />
+                Brussels
+              </td>
+            </tr>
+
+            <tr>
+              <td class="years">2003-2008</td>
+              <td class="infos">
+                <strong>Student Holiday Jobs</strong> <br />
+                HoReCa, sales <br />
+                Brussels / Belgian coast
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer_parts" id="copyright">© 2024 - Kozjanova Ksenia</div>
+      <div class="footer_parts" id="social_media_footer">
+        <a href="https://www.facebook.com" class="icon" id="facebook"></a>
+        <a href="https://www.facebook.com" class="icon" id="insta"></a>
+        <a href="https://www.facebook.com" class="icon" id="linkedin"></a>
+      </div>
+      <div class="footer_parts" id="private_policy">Private Policy</div>
+    </footer>
+  </body>
+</html>

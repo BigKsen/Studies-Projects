@@ -1,0 +1,533 @@
+@font-face {
+    font-family: Karstar Free;
+    src: url(/Fonts/Karstar\ Free.ttf);
+}
+
+@view-transition {
+    navigation: auto;
+}
+
+/*HTML*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color-light: #4b64f2;
+    --main-color-mid: #171fbf;
+    --main-color-dark: #060e40;
+    --accent-color-main: #f28907;
+    --accent-color-specific: #f25270;
+}
+
+/*BODY*/
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000008;
+}
+
+/* HEDEAR */
+
+header {
+    width: 100%;
+    height: 13%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(13, 99, 202);
+    background: linear-gradient(
+        180deg,
+        rgba(13, 99, 202, 0.5046393557422969) 7%,
+        rgba(0, 0, 8, 0.7483368347338936) 43%
+    );
+}
+
+#cube {
+    width: 10%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: 20s cube-rotate linear infinite;
+}
+
+#frontSide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 50%;
+    height: 50%;
+    transform-style: preserve-3d;
+    background-color: #060e40c5;
+    transform: translateZ(5%);
+    animation: 8s unfold-front linear infinite;
+}
+
+#backSide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 50%;
+    height: 50%;
+    transform-style: preserve-3d;
+    background-color: #060e40c5;
+    transform: translateZ(-5%);
+    animation: 8s unfold-back linear infinite;
+}
+
+#leftSide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 50%;
+    height: 50%;
+    transform-style: preserve-3d;
+    background-color: #171fbf85;
+    transform: translateX(-5%) rotateY(90deg);
+    animation: 8s unfold-left linear infinite;
+}
+
+#rightSide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 50%;
+    height: 50%;
+    transform-style: preserve-3d;
+    background-color: #171fbf85;
+    transform: translateX(5%) rotateY(90deg);
+    animation: 8s unfold-right linear infinite;
+}
+
+#topSide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 50%;
+    height: 50%;
+    transform-style: preserve-3d;
+    background-color: #4b64f28c;
+    transform: translateY(-5%) rotateX(90deg);
+    animation: 8s unfold-top linear infinite;
+}
+
+#bottomSide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 50%;
+    height: 50%;
+    transform-style: preserve-3d;
+    background-color: #4b64f28c;
+    transform: translateY(5%) rotateX(90deg);
+    animation: 8s unfold-bottom linear infinite;
+}
+
+#navbar {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Architects Daughter", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.3rem;
+    color: #f28807e0;
+    border-bottom: solid 1px #f28907;
+}
+
+#navbar > a {
+    color: #f28807e0;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#navbar > a:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    transition: 0.5s;
+}
+
+.chevronDown {
+    width: 2%;
+    transition: 0.5s;
+    position: absolute;
+    margin-left: -12%;
+}
+
+.chevronDown2 {
+    width: 2%;
+    transition: 0.5s;
+    position: absolute;
+    margin-left: 7%;
+}
+
+.dropDownDiv {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top: 14%;
+    right: 49.5%;
+    background-color: #000008c0;
+    border-left: #f28907 3px solid;
+    box-shadow: 10px 10px 10px #000008;
+    padding-left: 1%;
+    z-index: 500;
+}
+
+.dropDownDiv > a {
+    font-family: "Roboto";
+    font-size: 1.7rem;
+    color: #f28907;
+    text-decoration: none;
+    z-index: 500;
+}
+
+.dropDownDiv > a:hover {
+    background-size: 0 0.1em, 100% 0.1em;
+    transform: scale(1);
+    color: #f28907;
+}
+
+.dropDownDiv > a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1.4px;
+    bottom: -4px;
+    left: 0;
+    background-color: #f28907;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.dropDownDiv > a:hover::before {
+    transform: scaleX(1);
+}
+
+.dropDownDiv2 {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: 14%;
+    right: 33%;
+    background-color: #000008c0;
+    border-left: #f28907 3px solid;
+    box-shadow: 10px 10px 10px #000008;
+    padding-left: 1%;
+    z-index: 500;
+}
+
+.dropDownDiv2 > a {
+    font-family: "Roboto";
+    font-size: 1.7rem;
+    color: #f28907;
+    text-decoration: none;
+    z-index: 500;
+}
+
+.dropDownDiv2 > a:hover {
+    background-size: 0 0.1em, 100% 0.1em;
+    transform: scale(1);
+    color: #f28907;
+}
+
+.dropDownDiv2 > a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1.4px;
+    bottom: -4px;
+    left: 0;
+    background-color: #f28907;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.dropDownDiv2 > a:hover::before {
+    transform: scaleX(1);
+}
+
+/*MAIN*/
+
+main {
+    width: 100%;
+    height: 77%;
+    position: relative;
+}
+
+#stickyElement {
+    padding: 0.9%;
+    width: 1%;
+    height: 19%;
+    background-color: white;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    left: 99%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    background-color: #060e4034;
+    border: 2px solid #0d63ca;
+}
+
+#stickyElement:hover {
+    width: 2%;
+    height: 21%;
+    transition: 0.5s;
+}
+
+#currentPage {
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    transform: rotate(90deg);
+    margin-top: 35%;
+}
+
+#topArrow {
+    width: 100%;
+    height: 100%;
+}
+
+#wrapper {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    top: 5%;
+    left: 25%;
+    -webkit-perspective: 800;
+    -moz-perspective: 800;
+}
+
+#carrousel {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: Caroussel 50s infinite linear;
+    -moz-transform-style: preserve-3d;
+    -moz-animation: Caroussel 40s infinite linear;
+}
+
+.plan {
+    position: absolute;
+    height: 320px;
+    width: 200px;
+    text-align: center;
+    font-size: 8em;
+    color: #fff;
+    overflow: hidden;
+}
+
+#card1IMG,
+#card2IMG,
+#card3IMG,
+#card4IMG,
+#card5IMG,
+#card6IMG,
+#card7IMG,
+#card8IMG {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ou contain selon vos besoins */
+    display: block;
+}
+
+#card1,
+#card2,
+#card3,
+#card4,
+#card5,
+#card6,
+#card7,
+#card8 {
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 20px 20px #0d62ca;
+}
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: rgb(13, 99, 202);
+    background: linear-gradient(
+        360deg,
+        rgba(13, 99, 202, 0.5046393557422969) 7%,
+        rgba(0, 0, 8, 0.7483368347338936) 43%
+    );
+    z-index: 3;
+}
+
+#fakeDiv {
+    width: 33.3%;
+}
+
+#socialMedia {
+    width: 33.3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#socialMedia > a > img {
+    transition: 0.5s ease;
+}
+#socialMedia > a > img:hover {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    transition: 0.5s ease;
+}
+
+#copyrightText {
+    width: 33.3%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    align-items: center;
+    color: #4b64f2;
+    opacity: 0.5;
+    font-family: Karstar Free;
+    font-size: 6rem;
+}
+
+/* Animations Accueil  */
+
+@keyframes unfold-top {
+    0%,
+    100% {
+        transform: translateY(-4rem) rotateX(90deg);
+    }
+    50% {
+        transform: translateY(-8rem) rotateX(90deg);
+    }
+}
+
+@keyframes unfold-bottom {
+    0%,
+    100% {
+        transform: translateY(4rem) rotateX(90deg);
+    }
+    50% {
+        transform: translateY(8rem) rotateX(90deg);
+    }
+}
+
+@keyframes unfold-front {
+    0%,
+    100% {
+        transform: translateZ(4rem);
+    }
+    50% {
+        transform: translateZ(8rem);
+    }
+}
+
+@keyframes unfold-back {
+    0%,
+    100% {
+        transform: translateZ(-4rem);
+    }
+    50% {
+        transform: translateZ(-8rem);
+    }
+}
+
+@keyframes unfold-right {
+    0%,
+    100% {
+        transform: translateX(4rem) rotateY(90deg);
+    }
+    50% {
+        transform: translateX(8rem) rotateY(90deg);
+    }
+}
+
+@keyframes unfold-left {
+    0%,
+    100% {
+        transform: translateX(-4rem) rotateY(90deg);
+    }
+    50% {
+        transform: translateX(-8rem) rotateY(90deg);
+    }
+}
+
+@keyframes cube-rotate {
+    100% {
+        transform: rotateY(360deg) rotateX(720deg) rotateZ(1080deg);
+    }
+}
+
+/*faire tourner le carousel horizontalement de 360° de gauche à droite*/
+@-webkit-keyframes Caroussel {
+    from {
+        -webkit-transform: rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateY(-360deg);
+    }
+}
+
+/* tourner les cards sur l'axe horizontal (Y) et les translate en perspective (Z) pour garder un 3d en perspective */
+.p1 {
+    transform: translateZ(300px);
+    -webkit-transform: translateZ(300px);
+}
+.p2 {
+    transform: rotateY(45deg) translateZ(300px);
+    -webkit-transform: rotateY(45deg) translateZ(300px);
+}
+.p3 {
+    transform: rotateY(90deg) translateZ(300px);
+    -webkit-transform: rotateY(90deg) translateZ(300px);
+}
+.p4 {
+    transform: rotateY(135deg) translateZ(300px);
+    -webkit-transform: rotateY(135deg) translateZ(300px);
+}
+.p5 {
+    transform: rotateY(180deg) translateZ(300px);
+    -webkit-transform: rotateY(180deg) translateZ(300px);
+}
+.p6 {
+    transform: rotateY(225deg) translateZ(300px);
+    -webkit-transform: rotateY(225deg) translateZ(300px);
+}
+.p7 {
+    transform: rotateY(270deg) translateZ(300px);
+    -webkit-transform: rotateY(270deg) translateZ(300px);
+}
+.p8 {
+    transform: rotateY(315deg) translateZ(300px);
+    -webkit-transform: rotateY(315deg) translateZ(300px);
+}

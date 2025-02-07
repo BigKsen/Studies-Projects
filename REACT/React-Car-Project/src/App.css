@@ -1,0 +1,36 @@
+/* Gotham */
+
+@font-face {
+    font-family: "GothamOfficeRegular";
+    src: url("./assets/fonts/Gotham/GothamOffice-Regular.woff") format("woff");
+    src: url("./assets/fonts/Gotham/GothamOffice-Regular.woff2")- format("woff2");
+}
+
+/* Monserrat */
+
+@font-face {
+    font-family: "MonserratRegular";
+    src: url("./assets/fonts/Monserrat/Montserrat-Regular.woff") format("woff");
+    src: url("./assets/fonts/Monserrat/Montserrat-Regular.woff2")- format("woff2");
+}
+@font-face {
+    font-family: "MonserratMedium";
+    src: url("./assets/fonts/Monserrat/Montserrat-Medium.woff") format("woff");
+    src: url("./assets/fonts/Monserrat/Montserrat-Medium.woff2")- format("woff2");
+}
+
+/*
+titles:"MonserratMedium"
+text: "GothamOfficeRegular"
+
+*/
+
+body {
+    font-family: "GothamOfficeRegular";
+    background-color: white;
+    color: #B3911F;
+}
+
+h1 {
+    font-family: "MonserratMedium";
+}

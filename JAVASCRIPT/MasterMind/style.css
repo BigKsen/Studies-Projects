@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playTable {
+    background-color: darkslategray;
+    color: white;
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#computerPlay {
+    background-color: brown;
+    width: 70%;
+    height: 20%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+#userPlay {
+    background-color: chocolate;
+    width: 70%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+
+.hidden {
+    display: hidden;
+}
+
+.flags {
+    background-color: rgb(226, 165, 52);
+    width: 70%;
+    height: 10%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    height: 10%;
+    margin-bottom: 5%;
+}
+
+button {
+    width: 30%;
+    height: 60%;
+    border-radius: 7px;
+    border: outset;
+}
+
+span {
+    margin-left: 12%;
+    font-size: xxx-large;
+}

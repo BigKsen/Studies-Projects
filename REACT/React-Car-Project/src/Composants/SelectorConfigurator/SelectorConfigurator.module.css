@@ -1,0 +1,46 @@
+.carConfiguratorMain {
+    width: 35%;
+    height: 70%;
+    display: flex;
+    justify-content: center; /* Centre la configuration */
+    flex-wrap: wrap;
+    align-items: flex-start; /* Aligne les éléments en haut */
+    color: black;
+    font-family: "GothamOfficeRegular";
+    font-size: 1em;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding-right: 10%;
+}
+
+.carConfigurator {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column; /* Organisation verticale des champs */
+    gap: 15px; /* Espacement uniforme entre les lignes */
+}
+
+.formRow {
+    display: flex;
+    align-items: center; /* Aligne verticalement le label et le select */
+    justify-content: space-between; /* Espace entre le label et le select */
+    margin-bottom: 10px; /* Espacement entre les lignes */
+}
+
+.formRow > label {
+    flex: 1; /* Taille proportionnelle pour le label */
+    text-align: right; /* Aligne le texte du label à droite */
+    margin-right: 10px; /* Espacement entre le label et le select */
+    font-size: 1rem;
+}
+
+.formRow > select {
+    flex: 2; /* Le select prend plus d'espace */
+    padding: 0.5rem; /* Espacement interne pour le select */
+    border: 1px solid #ccc; /* Bordure */
+    border-radius: 4px; /* Coins arrondis pour un design moderne */
+    font-family: "GothamOfficeRegular";
+    background-color: rgb(240, 240, 240); /* Couleur de fond plus douce */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}

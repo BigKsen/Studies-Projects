@@ -1,0 +1,177 @@
+/* Style pour le titre */
+h2 {
+  width: 100vw;
+  height: 5vh;
+  font-size: 24px;
+  text-align: center;
+  color: #b3911f;
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Conteneur principal du formulaire */
+.formContainer {
+  color: black;
+  width: 100vw;
+  height: 65vh;
+  display: flex;
+  justify-content: space-between; /* Place les conteneurs à gauche et à droite */
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+/* Conteneur pour les informations sélectionnées */
+.selectedInfoContainer {
+  width: 60%; /* Réduit la largeur pour donner plus d'espace à l'autre conteneur */
+  height: 90%;
+  padding: 20px;
+  padding-left: 50px;
+  border-right: 1px solid #b3911f;
+  font-size: 1em;
+}
+
+.selectedInfoContainer > h3,
+.modelDetailsContainer > h3,
+.personalDataContainer > h3 {
+  color: #b3911f;
+  font-size: 1.3em;
+  width: 100%;
+  height: 5%;
+  margin: 0;
+  margin-bottom: 4%;
+  text-align: center;
+}
+
+.selectedInfoContainer > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.selectedInfoContainer > ul > li {
+  list-style: none;
+  margin-right: 10%;
+}
+
+.detailsTable > tbody > tr > td {
+  width: 200px;
+}
+
+/* Conteneur pour les données personnelles */
+.personalDataContainer {
+  width: 40%; /* Réduit la largeur pour garder un espacement équilibré */
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Formulaire avec disposition en colonne */
+.personalDataContainerForm {
+  width: 70%;
+  height: 100%;
+  font-family: "GothamOfficeRegular";
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+  gap: 30px; /* Ajout d'espacement entre chaque ligne du formulaire */
+}
+
+.bookingFormRow {
+  display: flex;
+  align-items: center; /* Alignement vertical */
+  justify-content: space-between; /* Équilibre l'espace entre label et input */
+  width: 100%; /* S'adapte au conteneur parent */
+}
+
+/* Labels */
+.bookingFormRow > label {
+  flex: 0 0 30%; /* Les labels occupent 30% de la largeur */
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  margin-right: 10px; /* Espace entre le label et l'input */
+}
+
+
+/* Inputs */
+.bookingFormRow > input {
+  flex: 1; /* Les inputs occupent tout l'espace restant */
+  outline: none;
+  transition: border-color 0.3s ease;
+  padding: 0.5rem; /* Espacement interne pour le select */
+    border: 1px solid #ccc; /* Bordure */
+    border-radius: 4px; /* Coins arrondis pour un design moderne */
+    font-family: "GothamOfficeRegular";
+    background-color: rgb(240, 240, 240); /* Couleur de fond plus douce */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+
+.bookingFormRow > input:focus {
+  border-color: #b3911f; /* Mettre en valeur le champ au focus */
+}
+
+
+/* Boutons */
+.bookingFormBtns {
+  width: 100%;
+  height: 20%;
+  gap:15%;
+  display: flex;
+  justify-content: center; /* Espacement égal entre les boutons */
+  align-items: center;
+  
+}
+
+.bookingFormBtns .bookingFormConfirm{
+  width: 150px;
+  height: 45px;
+  margin-top: 3%;
+  border: 1px solid #b3911f;
+  border-radius: 3px;
+  background: #ffffff;
+  color: #000000;
+  font-size: 1em;
+  text-transform: uppercase;
+  transition: background-color 0.5s ease, color 0.5s ease; /* Transition allongée */
+  cursor: pointer;
+  font-family: "GothamOfficeRegular";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.bookingFormBtns .bookingFormConfirm:hover{
+  background-color: #b3911f;
+  color: #ffffff;
+}
+
+.bookingFormBtns .bookingFormReset{
+  margin-top: 3%;
+  width: 150px;
+  height: 45px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color:#ffffff;
+  color: #000000;
+  font-size: 1em;
+  text-transform: uppercase;
+  transition: background-color 0.5s ease, color 0.5s ease; /* Transition allongée */
+  cursor: pointer;
+  font-family: "GothamOfficeRegular";
+}
+
+.bookingFormBtns .bookingFormReset:hover{
+  background-color: rgb(240, 240, 240);
+}
+
+
+
+

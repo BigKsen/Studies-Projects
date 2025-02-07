@@ -1,0 +1,519 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recherche.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="recherche.js" defer> </script>
+    <title>Immo Corner - Recherche</title>
+</head>
+
+<section id="section1">
+
+    <div id="navbar"> 
+        
+        <div class="logo"><img id="logoImg" src="./elements/logo2.png" alt="logo"></div>    
+
+        <div id="navbar_Rside">
+
+            <a href="./contact.html#section4" target="_blank" class="div_navbar_Rside">
+                <img class="localisationIcon" src="./elements/localisationWhite.png" alt="icone localisation">
+                <p class="localisationText">Nos agences</p>
+            </a>
+
+            <a href="./contact.html#section3" target="_blank" class="div_navbar_Rside">
+                <img class="mailIcon" src="./elements/enveloppeWhite.png" alt="icone mail">    
+                <p class="mailText">Nous écrire</p>
+            </a>
+
+            <a href="./contact.html#section3" target="_blank class" class="div_navbar_Rside">
+                <img class="phoneIcon" src="./elements/telephoneWhite.png" alt="icone telephone">
+                <p class="phoneText">Nous appeler</p>
+            </a>
+        
+        </div>
+
+            
+            <div class="menu">
+                <div class="btn_menu">
+                    <img class="menuIcon" src="./elements/menuWhite.png" alt="icone menu">
+                    <p class="menuText">Menu</p>
+                </div>    
+
+                <div class="dropdownContent">
+                    <a href="./accueil.html" class="menu_content" target="_blank">Accueil</a>
+                    <a href="./recherche.html#vente" class="menu_content" target="_blank">Biens en vente</a>
+                    <a href="./recherche.html#loc"class="menu_content" target="_blank">Biens en location</a>
+                    <a href="./estimation.html"class="menu_content" target="_blank">Estimation</a>
+                    <a href="./contact.html"class="menu_content" target="_blank">Contact</a>
+                    <a href="./link.html"class="menu_content" target="_blank">Liens utiles</a>
+                </div> 
+            </div>
+
+        </div>
+</section>
+
+<body>
+
+    <a href="./recherche.html"> <div id="current_page">⬅️ RECHERCHE </div></a>
+
+    <h1 id="vente">Biens en vente</h1>
+
+    <div id="sort">
+
+        <div id="rooms">
+            <h5>Trier par chambres</h5>
+            <input type="checkbox" name="2_chambres" id="2_chambres"><label for="2_chambres">2 chambres</label><br>
+            <input type="checkbox" name="3_chambres" id="3_chambres"><label for="3_chambres">3 chambres</label><br>
+            <input type="checkbox" name="4_chambres" id="4_chambres"><label for="4_chambres">4 chambres</label><br>
+
+        </div>
+
+        <div id="area"> 
+            <h5>Trier par commune</h5>
+            <input type="checkbox" name="Anderlecht" id="Anderlecht"><label for="Anderlecht">Anderlecht</label><br>
+            <input type="checkbox" name="Forest" id="Forest"><label for="Forest">Forest</label><br>
+            <input type="checkbox" name="Saint-Gilles" id="Saint-Gilles"><label for="Saint-Gilles">Saint-Gilles</label><br>
+            <input type="checkbox" name="Uccle" id="Uccle"><label for="Uccle">Uccle</label><br>
+
+        </div>
+        
+        <div id="price"> 
+            <h5>Trier par prix</h5>
+            <input type="checkbox" name="price1" id="price1"><label for="price1">300.000 - 350.000€</label><br>
+            <input type="checkbox" name="price2" id="price2"><label for="price2">350.000 - 400.000€</label><br>
+            <input type="checkbox" name="price3" id="price3"><label for="price3">400.000 - 500.000€</label><br>
+
+        </div>
+
+        <div id="meters"> 
+            <h5>Trier par superficie</h5>
+            <input type="checkbox" name="m1" id="m1"><label for="m1">100 - 200m2</label><br>
+            <input type="checkbox" name="m2" id="m2"><label for="m2">200 - 300m2</label><br>
+
+        </div>
+
+        <button id="reset">Reset</button>
+       
+    </div>
+    
+    <div id="property_sale">
+
+        <section class="houses_sale" id="house1"> Maison 3 chambres - Anderlecht - 300.000 euros - 200m²
+            <img src="./maisons_vente/maison1.jpg" alt="maison">
+            <div class="middle">
+                <div class="more_text">
+                    <div class="more_text_section">
+                        <img src="./elements/icone_localisation.png" alt=""> &nbsp
+                        <p>Rue Scheutbos 35 - 1070</p>
+                    </div>
+                    <div class="more_text_section">
+                        <img src="./elements/icone_immeuble.png" alt="">&nbsp
+                        <p>Maison 3 chambres</p>
+                    </div>
+                    <div class="more_text_section">
+                        <img src="./elements/icone_superficie.png" alt="">&nbsp
+                        <p>200m²</p>
+                    </div>
+                    <div class="more_text_section">
+                    <img src="./elements/icone_euro.png" alt="">&nbsp
+                    <p>300 k</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="houses_sale2" id="house2"> Maison 3 chambres - Anderlecht - 400.000 euros - 180m²
+            <img src="./maisons_vente/maison2.jpg" alt="maison">
+                <div class="middle2">
+                <div class="more_text2">
+                    <div class="more_text_section2">
+                        <img src="./elements/icone_localisation.png" alt=""> &nbsp
+                        <p>Rue Rotonde 43 - 1070</p>
+                    </div>
+                    <div class="more_text_section2">
+                        <img src="./elements/icone_immeuble.png" alt="">&nbsp
+                        <p>Maison 3 chambres</p>
+                    </div>
+                    <div class="more_text_section2">
+                        <img src="./elements/icone_superficie.png" alt="">&nbsp
+                        <p>180m²</p>
+                    </div>
+                    <div class="more_text_section2">
+                    <img src="./elements/icone_euro.png" alt="">&nbsp
+                    <p>400 k</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="houses_sale3" id="house3"> Maison 4 chambres - Anderlecht - 350.000 euros - 220m²
+        <img src="./maisons_vente/maison3.jpg" alt="maison">
+            <div class="middle3">
+                    <div class="more_text3">
+                        <div class="more_text_section3">
+                            <img src="./elements/icone_localisation.png" alt=""> &nbsp
+                            <p>rue Scheut 5 - 1070</p>
+                        </div>
+                        <div class="more_text_section3">
+                            <img src="./elements/icone_immeuble.png" alt="">&nbsp
+                            <p>Maison 4 chambres</p>
+                        </div>
+                        <div class="more_text_section3">
+                            <img src="./elements/icone_superficie.png" alt="">&nbsp
+                            <p>220m²</p>
+                        </div>
+                        <div class="more_text_section3">
+                        <img src="./elements/icone_euro.png" alt="">&nbsp
+                        <p>350 k</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="houses_sale4" id="house4"> Maison 2 chambres - Uccle - 380.000 euros - 150m²
+        <img src="./maisons_vente/maison4.jpg" alt="maison">
+            <div class="middle4">
+                    <div class="more_text4">
+                        <div class="more_text_section4">
+                            <img src="./elements/icone_localisation.png" alt=""> &nbsp
+                            <p>Rue Stalle 100 - 1180</p>
+                        </div>
+                        <div class="more_text_section4">
+                            <img src="./elements/icone_immeuble.png" alt="">&nbsp
+                            <p>Maison 2 chambres</p>
+                        </div>
+                        <div class="more_text_section4">
+                            <img src="./elements/icone_superficie.png" alt="">&nbsp
+                            <p>150m²</p>
+                        </div>
+                        <div class="more_text_section4">
+                        <img src="./elements/icone_euro.png" alt="">&nbsp
+                        <p>380 k</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="houses_sale5" id="house5"> Maison 3 chambres - Uccle - 450.000 euros - 180m²
+        <img src="./maisons_vente/maison5.jpg" alt="maison">
+            <div class="middle5">
+                    <div class="more_text5">
+                        <div class="more_text_section5">
+                            <img src="./elements/icone_localisation.png" alt=""> &nbsp
+                            <p>Rue Zwartebeek 11- 1180</p>
+                        </div>
+                        <div class="more_text_section5">
+                            <img src="./elements/icone_immeuble.png" alt="">&nbsp
+                            <p>Maison 3 chambres</p>
+                        </div>
+                        <div class="more_text_section5">
+                            <img src="./elements/icone_superficie.png" alt="">&nbsp
+                            <p>180m²</p>
+                        </div>
+                        <div class="more_text_section5">
+                        <img src="./elements/icone_euro.png" alt="">&nbsp
+                        <p>450 k</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="houses_sale6" id="house6"> Maison 3 chambres - Uccle - 480.000 euros - 200m²
+        <img src="./maisons_vente/maison6.jpg" alt="maison">
+        <div class="middle6">
+                <div class="more_text6">
+                    <div class="more_text_section6">
+                        <img src="./elements/icone_localisation.png" alt=""> &nbsp
+                        <p>Rue Bellingen 3 - 1180</p>
+                    </div>
+                    <div class="more_text_section6">
+                        <img src="./elements/icone_immeuble.png" alt="">&nbsp
+                        <p>Maison 3 chambres</p>
+                    </div>
+                    <div class="more_text_section6">
+                        <img src="./elements/icone_superficie.png" alt="">&nbsp
+                        <p>200m²</p>
+                    </div>
+                    <div class="more_text_section6">
+                    <img src="./elements/icone_euro.png" alt="">&nbsp
+                    <p>480 k</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="houses_sale7" id="house7"> Maison 3 chambres - Forest - 350.000 euros - 180m²
+        <img src="./maisons_vente/maison7.jpg" alt="maison">
+            <div class="middle7">
+                    <div class="more_text7">
+                        <div class="more_text_section7">
+                            <img src="./elements/icone_localisation.png" alt=""> &nbsp
+                            <p>rue Beekant 12 - 1190</p>
+                        </div>
+                        <div class="more_text_section7">
+                            <img src="./elements/icone_immeuble.png" alt="">&nbsp
+                            <p>Maison 3 chambres</p>
+                        </div>
+                        <div class="more_text_section7">
+                            <img src="./elements/icone_superficie.png" alt="">&nbsp
+                            <p>180m²</p>
+                        </div>
+                        <div class="more_text_section7">
+                        <img src="./elements/icone_euro.png" alt="">&nbsp
+                        <p>350 k</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="houses_sale8" id="house8"> Maison 3 chambres - Forest - 380.000 euros - 220m²
+        <img src="./maisons_vente/maison8.jpg" alt="maison">
+            <div class="middle8">
+                    <div class="more_text8">                       
+                         <div class="more_text_section8">
+                            <img src="./elements/icone_localisation.png" alt=""> &nbsp
+                            <p>Rue Fourmont 8 - 1190</p>
+                        </div>
+                        <div class="more_text_section8">
+                            <img src="./elements/icone_immeuble.png" alt="">&nbsp
+                            <p>Maison 3 chambres</p>
+                        </div>
+                        <div class="more_text_section8">
+                            <img src="./elements/icone_superficie.png" alt="">&nbsp
+                            <p>220m²</p>
+                        </div>
+                        <div class="more_text_section8">
+                        <img src="./elements/icone_euro.png" alt="">&nbsp
+                        <p>380 k</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="houses_sale9" id="house9"> Maison 4 chambres - Forest - 450.000 euros - 200m²
+        <img src="./maisons_vente/maison9.jpg" alt="maison">
+        <div class="middle9">
+                <div class="more_text9">
+                    <div class="more_text_section9">
+                        <img src="./elements/icone_localisation.png" alt=""> &nbsp
+                        <p>Rue Rotonde 43 - 1070</p>
+                    </div>
+                    <div class="more_text_section9">
+                        <img src="./elements/icone_immeuble.png" alt="">&nbsp
+                        <p>Maison 3 chambres</p>
+                    </div>
+                    <div class="more_text_section9">
+                        <img src="./elements/icone_superficie.png" alt="">&nbsp
+                        <p>180m²</p>
+                    </div>
+                    <div class="more_text_section9">
+                    <img src="./elements/icone_euro.png" alt="">&nbsp
+                    <p>400 k</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="houses_sale10" id="house10"> Maison 3 chambres - Saint-Gilles - 450.000 euros - 160m²
+        <img src="./maisons_vente/maison10.jpg" alt="maison">
+            <div class="middle10">
+                    <div class="more_text10">
+                        <div class="more_text_section10">
+                            <img src="./elements/icone_localisation.png" alt=""> &nbsp
+                            <p>Rue Rotonde 43 - 1070</p>
+                        </div>
+                        <div class="more_text_section10">
+                            <img src="./elements/icone_immeuble.png" alt="">&nbsp
+                            <p>Maison 3 chambres</p>
+                        </div>
+                        <div class="more_text_section10">
+                            <img src="./elements/icone_superficie.png" alt="">&nbsp
+                            <p>180m²</p>
+                        </div>
+                        <div class="more_text_section10">
+                        <img src="./elements/icone_euro.png" alt="">&nbsp
+                        <p>400 k</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="houses_sale11" id="house11"> Maison 3 chambres - Saint-Gilles - 400.000 euros - 180m²
+        <img src="./maisons_vente/maison11.jpg" alt="maison">
+        <div class="middle11">
+                <div class="more_text11">
+                        <div class="more_text_section11">
+                        <img src="./elements/icone_localisation.png" alt=""> &nbsp
+                        <p>Rue Rotonde 43 - 1070</p>
+                    </div>
+                    <div class="more_text_section11">
+                        <img src="./elements/icone_immeuble.png" alt="">&nbsp
+                        <p>Maison 3 chambres</p>
+                    </div>
+                    <div class="more_text_section11">
+                        <img src="./elements/icone_superficie.png" alt="">&nbsp
+                        <p>180m²</p>
+                    </div>
+                    <div class="more_text_section11">
+                    <img src="./elements/icone_euro.png" alt="">&nbsp
+                    <p>400 k</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="houses_sale12" id="house12"> Maison 4 chambres - Saint-Gilles - 480.000 euros - 220m²
+        <img src="./maisons_vente/maison12.jpg" alt="maison">
+            <div class="middle12">
+                    <div class="more_text12">
+                        <div class="more_text_section12">
+                            <img src="./elements/icone_localisation.png" alt=""> &nbsp
+                            <p>Rue Rotonde 43 - 1070</p>
+                        </div>
+                        <div class="more_text_section12">
+                            <img src="./elements/icone_immeuble.png" alt="">&nbsp
+                            <p>Maison 3 chambres</p>
+                        </div>
+                        <div class="more_text_section12">
+                            <img src="./elements/icone_superficie.png" alt="">&nbsp
+                            <p>180m²</p>
+                        </div>
+                        <div class="more_text_section12">
+                        <img src="./elements/icone_euro.png" alt="">&nbsp
+                        <p>400 k</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+    </div>
+
+    <h1 id="loc">Biens en location</h1>
+
+    <div id="sort_rent">
+
+        <div id="rooms">
+            <h5>Trier par chambres</h5>
+            <input type="checkbox" name="loc_1_chambres" id="loc_1_chambres"><label for="loc_1_chambres"> 1 chambre </label><br>
+            <input type="checkbox" name="loc_2_chambres" id="loc_2_chambres"><label for="loc_2_chambres"> 2 chambres </label><br>
+            <input type="checkbox" name="loc_3_chambres" id="loc_3_chambres"><label for="loc_3_chambres"> 3 chambres </label><br>
+
+        </div>
+
+        <div id="area"> 
+            <h5>Trier par commune</h5>
+            <input type="checkbox" name="loc_Anderlecht" id="loc_Anderlecht"><label for="loc_Anderlecht">Anderlecht</label><br>
+            <input type="checkbox" name="loc_Forest" id="loc_Forest"><label for="loc_Forest">Forest</label><br>
+            <input type="checkbox" name="loc_Saint_Gilles" id="loc_Saint_Gilles"><label for="loc_Saint_Gilles">Saint-Gilles</label><br>
+            <input type="checkbox" name="loc_Uccle" id="loc_Uccle"><label for="loc_Uccle">Uccle</label><br>
+
+        </div>
+        
+        <div id="price"> 
+            <h5>Trier par prix</h5>
+            <input type="checkbox" name="loc_price1" id="loc_price1"><label for="loc_price1">500 - 1000€</label><br>
+            <input type="checkbox" name="loc_price2" id="loc_price2"><label for="loc_price2">1000 - 1500€</label><br>
+
+        </div>
+
+        <div id="meters"> 
+            <h5>Trier par superficie</h5>
+            <input type="checkbox" name="loc_m1" id="loc_m1"><label for="m1">50 - 100m2</label><br>
+            <input type="checkbox" name="loc_m2" id="loc_m2"><label for="m2">100 - 200m2</label><br>
+
+        </div>
+
+        <button id="loc_reset">Reset</button>
+
+    </div>
+
+    <div id="property-rent">
+
+            <section class="apparts_rent" id="appart1"> Appartement chambres:3 - zone: 1070 - 1200 euros - 150m2
+            <img src="./appartements_location/appar1.jpg" alt="appartement">
+            </section>
+    
+            <section class="apparts_rent" id="appart2"> Appartement chambres:2 - zone: 1070 - 950 euros - 90m2
+                <img src="./appartements_location/appart2.jpg" alt="appartement">
+            </section>
+    
+            <section class="apparts_rent" id="appart3"> Appartement chambres:1 - zone: 1190 - 850 euros - 55m2
+                <img src="./appartements_location/appart3.jpg" alt="appartement">
+            </section>
+    
+            <section class="apparts_rent" id="appart4"> Appartement chambres:2 - zone: 1180 - 1350 euros - 100m2
+                <img src="./appartements_location/appart4.jpg" alt="appartement">
+            </section>
+    
+            <section class="apparts_rent" id="appart5"> Appartement chambres:1 - zone: 1060 - 950 euros - 70m2
+            <img src="./appartements_location/appart5.jpg" alt="appartement">
+            </section>
+    
+            <section class="apparts_rent" id="appart6"> Appartement chambres:2 - zone: 1060 - 1100 euros - 95m2
+                <img src="./appartements_location/appart6.jpg" alt="appartement">
+            </section>
+ 
+    </div>
+    
+</body>
+
+
+<footer>
+     <div id="repeatnavbar"> 
+
+        <div class="logo">
+            <a href="./accueil.html#navbar"><img id="logoImg" src="./elements/logo2.png" alt="logo"></a>
+            
+        </div>    
+
+        <div class="localisation">
+            <button class="btn_localisation">                               
+                <a href="./contact.html#section4" target="_blank"><img class="localisationIcon" src="./elements/localisationWhite.png" alt="icone localisation"></a>
+                <p class="localisationText">Nos agences</p>
+            </button>
+        </div>
+
+        <div class="mail">
+            <button class="btn_mail">                                      
+                <a href="./contact.html" target="_blank"><img class="mailIcon" src="./elements/enveloppeWhite.png" alt="icone mail"></a>      
+                <p class="mailText">Nous écrire</p>
+            </button>
+        </div>
+
+        <div class="phone">
+            <button class="btn_phone">                                      
+                <a href="./contact.html" target="_blank"><img class="phoneIcon" src="./elements/telephoneWhite.png" alt="icone telephone"></a>
+                <p class="phoneText">Nous appeler</p>
+            </button>
+        </div>
+    </div>
+
+    <div id="socialNetworks">
+        <img id="twitterIcon" src="./elements/twitterWhite.png" alt="icone twitter">
+        <img id="facebookIcon" src="./elements/facebookWhite.png" alt="icone facebook">
+        <img id="linkedinIcon" src="./elements/linkedinWhite.png" alt="icone linkedIn">
+    </div>
+
+    <div id="copyrights">
+        <div id="textCopyrights">Copyrights immoCorner 2024</div>
+        <div id="legacy">
+            <div id="legalMentions"> Mentions légales &nbsp &nbsp   </div> 
+            <div id="generalConditions">Conditions générales de vente &nbsp  &nbsp  </div>
+            <div id="privacy">Protection de données &nbsp &nbsp   </div>
+        </div>
+        <div id="webCreator">by Kozjanova Ksenia</div>
+    </div>
+
+</footer>
+
+
+
+
+</html>

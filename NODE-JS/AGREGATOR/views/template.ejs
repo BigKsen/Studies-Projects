@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <title>Template HTML pour AGREGATOR</title>
+</head>
+
+<body>
+  <div id="greetings">
+    <p>Hello</p>
+    <img src="./img/mixte5.png" alt="smile" />
+  </div>
+
+  <div id="widgets">
+    <div id="trains">
+      <p>Prochains Départs Trains - Station: <strong>Gare du Nord</strong></p>
+
+      <table>
+
+        <tr>
+          <td class="THtd">Heure</td>
+          <td class="THtd">Station</td>
+          <td class="THtd">Voie</td>
+          <td class="THtd">Retard</td>
+        </tr>
+
+        <% for (let i=0; i < trains.board.length; i++) { %>
+          <tr>
+
+            <td class="dataChunck">
+              <%= trains.board[i].heure %>
+            </td>
+
+            <td class="dataChunck">
+              <%= trains.board[i].station %>
+            </td>
+
+            <td class="dataChunck">
+              <%= trains.board[i].voie %>
+            </td>
+
+            <td class="dataChunck">
+              <%= trains.board[i].retard %> '
+            </td>
+
+          </tr>
+          <% } %>
+      </table>
+    </div>
+
+
+    <div id="widgetWeather">
+      <div id="day1">
+        <p class="day">Aujourd'hui</p>
+        <img class="weathericon" src="./img/icons8-nuage-94.png" alt="nuageIcone" />
+        <p class="minT">
+          <%= weather.meteo[5].temperature %> °C
+        </p>
+        <p class="maxT">
+          <%= weather.meteo[16].temperature %>°C
+        </p>
+      </div>
+      <div id="day2">
+        <p class="day">Demain</p>
+        <img class="weathericon" src="./img/icons8-nuage-94.png" alt="nuageIcone" />
+        <p class="minT">
+          <%= weather.meteo[29].temperature %> °C
+        </p>
+        <p class="maxT">
+          <%= weather.meteo[40].temperature %>°C
+        </p>
+      </div>
+      <div id="day3">
+        <p class="day">Après-demain</p>
+        <img class="weathericon" src="./img/icons8-parapluie-94.png" alt="parapluiIcone" />
+        <p class="minT">
+          <%= weather.meteo[53].temperature %>°C
+        </p>
+        <p class="maxT">
+          <%= weather.meteo[64].temperature %>°C
+        </p>
+      </div>
+    </div>
+    <div id="widgetAirQuality">
+      <p id="airTitel">IQAir</p>
+      <p id="IQAlevel">Moyen</p>
+      <p id="IQAindex">
+        <%= airQuality.AirQ[new Date().getHours()].airQuality %>
+      </p>
+    </div>
+
+    <div id="widgetCurrency">
+
+      <p id="currencyTitle">Currencies</p>
+
+      <% if (floatRates && floatRates.length> 0) { %> <% floatRates.forEach(function(currency) { %>
+          <div class="currency">
+            <!-- Display the currency name and code -->
+            <p class="code">
+              <%= currency.currency %>
+            </p>
+
+            <!-- Display the currency name and code -->
+            <p class="name">
+              <%= currency.name %>
+            </p>
+
+            <!-- Display the exchange rate -->
+            <p class="rate">
+              1 EUR = <%= currency.rate.toFixed(4) %>
+                <%= currency.currency %>
+            </p>
+          </div>
+          <% }); %>
+            <% } else { %>
+              <p>No currency data available.</p>
+              <% } %>
+    </div>
+  </div>
+</body>
+
+</html>
