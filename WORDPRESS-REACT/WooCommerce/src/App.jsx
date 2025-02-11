@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
+import ProductFilter from './Components/Filter/ProductFilter'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-   
+   <ProductFilter/>
     </>
   )
 }
